@@ -1,67 +1,77 @@
 {
   "app": "Ahrefs",
-  "id": 53,
-  "research_method": "kiro_web_search",
+  "started_at": "2026-08-17T18:51:49.089016+00:00",
   "stages": [
     {
       "stage": "source_discovery",
-      "query_templates": [
-        "Ahrefs API documentation authentication",
-        "Ahrefs developer API OAuth API key",
-        "Ahrefs API pricing free trial developer access",
-        "Ahrefs official MCP server model context protocol",
-        "Ahrefs REST API GraphQL webhooks docs",
-        "Ahrefs composio toolkit"
-      ]
-    },
-    {
-      "stage": "retrieval",
-      "sources": [
-        "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
-        "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
-        "https://docs.ahrefs.com/en/mcp/docs/introduction"
+      "at": "2026-08-17T18:51:49.089061+00:00",
+      "candidates": [
+        "https://ahrefs.com/api",
+        "https://ahrefs.com",
+        "https://developers.ahrefs.com",
+        "https://developer.ahrefs.com",
+        "https://docs.ahrefs.com",
+        "https://ahrefs.com/developers",
+        "https://ahrefs.com/docs"
       ]
     },
     {
       "stage": "extraction",
-      "fields": {
-        "auth_methods": [
-          "API Key",
-          "Bearer Token",
-          "OAuth 2.0"
-        ],
-        "access_model": "Enterprise-only",
-        "api_type": [
-          "REST"
-        ],
-        "api_breadth": "Moderate",
-        "mcp_status": "First-party documented"
-      }
+      "at": "2026-08-17T18:51:51.379945+00:00"
     },
     {
       "stage": "scoring",
-      "breakdown": {
-        "base": 40,
-        "access_model": -22,
-        "api_type": 8,
-        "api_breadth": 2,
-        "auth_methods": 5,
-        "mcp_status": 8,
-        "doc_quality": 3
-      },
-      "score": 44,
-      "label": "Hard"
+      "at": "2026-08-17T18:51:51.410626+00:00",
+      "score": 0,
+      "label": "Not currently feasible"
     },
     {
       "stage": "validation",
-      "status": "auto-validated",
-      "errors": []
-    },
-    {
-      "stage": "verification",
-      "status": "unverified"
+      "at": "2026-08-17T18:51:51.410675+00:00",
+      "errors": [
+        "missing required field: description",
+        "missing required field: auth_methods",
+        "missing required field: auth_detail",
+        "missing required field: access_model",
+        "missing required field: api_type",
+        "missing required field: api_breadth",
+        "missing required field: mcp_status",
+        "missing required field: main_blocker",
+        "missing required field: confidence",
+        "invalid access_model: None",
+        "invalid api_breadth: None",
+        "invalid mcp_status: None",
+        "confidence must be 0..1, got None"
+      ]
     }
   ],
-  "confidence": 0.85,
-  "evidence_count": 3
+  "queries": [
+    "Ahrefs API documentation authentication",
+    "Ahrefs developer API OAuth API key",
+    "Ahrefs API pricing free trial developer access"
+  ],
+  "sources_found": [],
+  "fetched": [],
+  "errors": [
+    {
+      "stage": "search",
+      "query": "Ahrefs API documentation authentication",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Ahrefs developer API OAuth API key",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Ahrefs API pricing free trial developer access",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "extraction",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    }
+  ],
+  "finished_at": "2026-08-17T18:51:51.410680+00:00"
 }

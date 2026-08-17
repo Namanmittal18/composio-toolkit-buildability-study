@@ -1,0 +1,34 @@
+{
+  "id": 21,
+  "app": "Slack",
+  "category": "Communications and Messaging",
+  "hint": "slack.com",
+  "verification_status": "unverified",
+  "evidence": [],
+  "buildability_score": 0,
+  "buildability": "Not currently feasible",
+  "buildability_breakdown": {
+    "base": 40,
+    "access_model": -12,
+    "api_type": -30,
+    "api_breadth": -3,
+    "auth_methods": -6,
+    "mcp_status": 0,
+    "doc_quality": -3
+  },
+  "_validation_errors": [
+    "missing required field: description",
+    "missing required field: auth_methods",
+    "missing required field: auth_detail",
+    "missing required field: access_model",
+    "missing required field: api_type",
+    "missing required field: api_breadth",
+    "missing required field: mcp_status",
+    "missing required field: main_blocker",
+    "missing required field: confidence",
+    "invalid access_model: None",
+    "invalid api_breadth: None",
+    "invalid mcp_status: None",
+    "confidence must be 0..1, got None"
+  ]
+}

@@ -1,64 +1,78 @@
 {
   "app": "Amazon Selling Partner",
-  "id": 49,
-  "research_method": "kiro_web_search",
+  "started_at": "2026-08-17T18:51:46.630774+00:00",
   "stages": [
     {
       "stage": "source_discovery",
-      "query_templates": [
-        "Amazon Selling Partner API documentation authentication",
-        "Amazon Selling Partner developer API OAuth API key",
-        "Amazon Selling Partner API pricing free trial developer access",
-        "Amazon Selling Partner official MCP server model context protocol",
-        "Amazon Selling Partner REST API GraphQL webhooks docs",
-        "Amazon Selling Partner composio toolkit"
-      ]
-    },
-    {
-      "stage": "retrieval",
-      "sources": [
-        "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
-        "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api"
+      "at": "2026-08-17T18:51:46.630827+00:00",
+      "candidates": [
+        "https://developer-docs.amazon.com/sp-api",
+        "https://developer-docs.amazon.com",
+        "https://developers.amazon.com",
+        "https://developer.amazon.com",
+        "https://docs.amazon.com",
+        "https://amazon.com/developers",
+        "https://amazon.com/docs",
+        "https://amazon.com/api"
       ]
     },
     {
       "stage": "extraction",
-      "fields": {
-        "auth_methods": [
-          "OAuth 2.0"
-        ],
-        "access_model": "Admin approval",
-        "api_type": [
-          "REST"
-        ],
-        "api_breadth": "Very broad",
-        "mcp_status": "None found"
-      }
+      "at": "2026-08-17T18:51:49.056525+00:00"
     },
     {
       "stage": "scoring",
-      "breakdown": {
-        "base": 40,
-        "access_model": -10,
-        "api_type": 8,
-        "api_breadth": 6,
-        "auth_methods": 3,
-        "mcp_status": 0,
-        "doc_quality": 0
-      },
-      "score": 47,
-      "label": "Hard"
+      "at": "2026-08-17T18:51:49.086708+00:00",
+      "score": 0,
+      "label": "Not currently feasible"
     },
     {
       "stage": "validation",
-      "status": "auto-validated",
-      "errors": []
-    },
-    {
-      "stage": "verification",
-      "status": "unverified"
+      "at": "2026-08-17T18:51:49.086777+00:00",
+      "errors": [
+        "missing required field: description",
+        "missing required field: auth_methods",
+        "missing required field: auth_detail",
+        "missing required field: access_model",
+        "missing required field: api_type",
+        "missing required field: api_breadth",
+        "missing required field: mcp_status",
+        "missing required field: main_blocker",
+        "missing required field: confidence",
+        "invalid access_model: None",
+        "invalid api_breadth: None",
+        "invalid mcp_status: None",
+        "confidence must be 0..1, got None"
+      ]
     }
   ],
-  "confidence": 0.85,
-  "evidence_count": 2
+  "queries": [
+    "Amazon Selling Partner API documentation authentication",
+    "Amazon Selling Partner developer API OAuth API key",
+    "Amazon Selling Partner API pricing free trial developer access"
+  ],
+  "sources_found": [],
+  "fetched": [],
+  "errors": [
+    {
+      "stage": "search",
+      "query": "Amazon Selling Partner API documentation authentication",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Amazon Selling Partner developer API OAuth API key",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Amazon Selling Partner API pricing free trial developer access",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "extraction",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    }
+  ],
+  "finished_at": "2026-08-17T18:51:49.086784+00:00"
 }

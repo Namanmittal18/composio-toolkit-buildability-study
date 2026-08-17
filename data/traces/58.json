@@ -1,64 +1,78 @@
 {
   "app": "Sherlock",
-  "id": 58,
-  "research_method": "kiro_web_search",
+  "started_at": "2026-08-17T18:51:51.412688+00:00",
   "stages": [
     {
       "stage": "source_discovery",
-      "query_templates": [
-        "Sherlock API documentation authentication",
-        "Sherlock developer API OAuth API key",
-        "Sherlock API pricing free trial developer access",
-        "Sherlock official MCP server model context protocol",
-        "Sherlock REST API GraphQL webhooks docs",
-        "Sherlock composio toolkit"
-      ]
-    },
-    {
-      "stage": "retrieval",
-      "sources": [
+      "at": "2026-08-17T18:51:51.412733+00:00",
+      "candidates": [
         "https://github.com/sherlock-project/sherlock",
-        "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md"
+        "https://github.com",
+        "https://developers.github.com",
+        "https://developer.github.com",
+        "https://docs.github.com",
+        "https://github.com/developers",
+        "https://github.com/docs",
+        "https://github.com/api"
       ]
     },
     {
       "stage": "extraction",
-      "fields": {
-        "auth_methods": [
-          "None"
-        ],
-        "access_model": "No public API",
-        "api_type": [
-          "CLI"
-        ],
-        "api_breadth": "Not applicable",
-        "mcp_status": "None found"
-      }
+      "at": "2026-08-17T18:51:54.461293+00:00"
     },
     {
       "stage": "scoring",
-      "breakdown": {
-        "base": 40,
-        "access_model": -40,
-        "api_type": -6,
-        "api_breadth": -5,
-        "auth_methods": -6,
-        "mcp_status": 0,
-        "doc_quality": 0
-      },
+      "at": "2026-08-17T18:51:54.495640+00:00",
       "score": 0,
       "label": "Not currently feasible"
     },
     {
       "stage": "validation",
-      "status": "auto-validated",
-      "errors": []
-    },
-    {
-      "stage": "verification",
-      "status": "unverified"
+      "at": "2026-08-17T18:51:54.495687+00:00",
+      "errors": [
+        "missing required field: description",
+        "missing required field: auth_methods",
+        "missing required field: auth_detail",
+        "missing required field: access_model",
+        "missing required field: api_type",
+        "missing required field: api_breadth",
+        "missing required field: mcp_status",
+        "missing required field: main_blocker",
+        "missing required field: confidence",
+        "invalid access_model: None",
+        "invalid api_breadth: None",
+        "invalid mcp_status: None",
+        "confidence must be 0..1, got None"
+      ]
     }
   ],
-  "confidence": 0.9,
-  "evidence_count": 2
+  "queries": [
+    "Sherlock API documentation authentication",
+    "Sherlock developer API OAuth API key",
+    "Sherlock API pricing free trial developer access"
+  ],
+  "sources_found": [],
+  "fetched": [],
+  "errors": [
+    {
+      "stage": "search",
+      "query": "Sherlock API documentation authentication",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Sherlock developer API OAuth API key",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Sherlock API pricing free trial developer access",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "extraction",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    }
+  ],
+  "finished_at": "2026-08-17T18:51:54.495692+00:00"
 }

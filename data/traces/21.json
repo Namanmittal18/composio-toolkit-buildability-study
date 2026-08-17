@@ -1,67 +1,77 @@
 {
   "app": "Slack",
-  "id": 21,
-  "research_method": "kiro_web_search",
+  "started_at": "2026-08-17T18:51:44.125780+00:00",
   "stages": [
     {
       "stage": "source_discovery",
-      "query_templates": [
-        "Slack API documentation authentication",
-        "Slack developer API OAuth API key",
-        "Slack API pricing free trial developer access",
-        "Slack official MCP server model context protocol",
-        "Slack REST API GraphQL webhooks docs",
-        "Slack composio toolkit"
-      ]
-    },
-    {
-      "stage": "retrieval",
-      "sources": [
-        "https://docs.slack.dev/authentication/",
-        "https://docs.slack.dev/apis/web-api/",
-        "https://docs.slack.dev/ai/slack-mcp-server/"
+      "at": "2026-08-17T18:51:44.125844+00:00",
+      "candidates": [
+        "https://slack.com",
+        "https://developers.slack.com",
+        "https://developer.slack.com",
+        "https://docs.slack.com",
+        "https://slack.com/developers",
+        "https://slack.com/docs",
+        "https://slack.com/api"
       ]
     },
     {
       "stage": "extraction",
-      "fields": {
-        "auth_methods": [
-          "OAuth 2.0",
-          "Bearer Token"
-        ],
-        "access_model": "Self-serve free",
-        "api_type": [
-          "REST",
-          "Webhooks"
-        ],
-        "api_breadth": "Broad",
-        "mcp_status": "Official"
-      }
+      "at": "2026-08-17T18:51:46.596792+00:00"
     },
     {
       "stage": "scoring",
-      "breakdown": {
-        "base": 40,
-        "access_model": 30,
-        "api_type": 10,
-        "api_breadth": 4,
-        "auth_methods": 5,
-        "mcp_status": 10,
-        "doc_quality": 3
-      },
-      "score": 100,
-      "label": "Easy"
+      "at": "2026-08-17T18:51:46.627827+00:00",
+      "score": 0,
+      "label": "Not currently feasible"
     },
     {
       "stage": "validation",
-      "status": "auto-validated",
-      "errors": []
-    },
-    {
-      "stage": "verification",
-      "status": "unverified"
+      "at": "2026-08-17T18:51:46.627901+00:00",
+      "errors": [
+        "missing required field: description",
+        "missing required field: auth_methods",
+        "missing required field: auth_detail",
+        "missing required field: access_model",
+        "missing required field: api_type",
+        "missing required field: api_breadth",
+        "missing required field: mcp_status",
+        "missing required field: main_blocker",
+        "missing required field: confidence",
+        "invalid access_model: None",
+        "invalid api_breadth: None",
+        "invalid mcp_status: None",
+        "confidence must be 0..1, got None"
+      ]
     }
   ],
-  "confidence": 0.9,
-  "evidence_count": 3
+  "queries": [
+    "Slack API documentation authentication",
+    "Slack developer API OAuth API key",
+    "Slack API pricing free trial developer access"
+  ],
+  "sources_found": [],
+  "fetched": [],
+  "errors": [
+    {
+      "stage": "search",
+      "query": "Slack API documentation authentication",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Slack developer API OAuth API key",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "Slack API pricing free trial developer access",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "extraction",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    }
+  ],
+  "finished_at": "2026-08-17T18:51:46.627909+00:00"
 }

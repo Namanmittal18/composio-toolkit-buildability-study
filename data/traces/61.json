@@ -1,69 +1,77 @@
 {
   "app": "GitHub",
-  "id": 61,
-  "research_method": "kiro_web_search",
+  "started_at": "2026-08-17T18:51:54.497681+00:00",
   "stages": [
     {
       "stage": "source_discovery",
-      "query_templates": [
-        "GitHub API documentation authentication",
-        "GitHub developer API OAuth API key",
-        "GitHub API pricing free trial developer access",
-        "GitHub official MCP server model context protocol",
-        "GitHub REST API GraphQL webhooks docs",
-        "GitHub composio toolkit"
-      ]
-    },
-    {
-      "stage": "retrieval",
-      "sources": [
-        "https://docs.github.com/en/rest",
-        "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
-        "https://github.com/github/github-mcp-server"
+      "at": "2026-08-17T18:51:54.497745+00:00",
+      "candidates": [
+        "https://docs.github.com/rest",
+        "https://docs.github.com",
+        "https://developers.github.com",
+        "https://developer.github.com",
+        "https://github.com/developers",
+        "https://github.com/docs",
+        "https://github.com/api"
       ]
     },
     {
       "stage": "extraction",
-      "fields": {
-        "auth_methods": [
-          "OAuth 2.0",
-          "Personal Access Token",
-          "JWT"
-        ],
-        "access_model": "Self-serve free",
-        "api_type": [
-          "REST",
-          "GraphQL",
-          "Webhooks"
-        ],
-        "api_breadth": "Very broad",
-        "mcp_status": "Official"
-      }
+      "at": "2026-08-17T18:51:57.891684+00:00"
     },
     {
       "stage": "scoring",
-      "breakdown": {
-        "base": 40,
-        "access_model": 30,
-        "api_type": 10,
-        "api_breadth": 6,
-        "auth_methods": 5,
-        "mcp_status": 10,
-        "doc_quality": 3
-      },
-      "score": 100,
-      "label": "Easy"
+      "at": "2026-08-17T18:51:57.924322+00:00",
+      "score": 0,
+      "label": "Not currently feasible"
     },
     {
       "stage": "validation",
-      "status": "auto-validated",
-      "errors": []
-    },
-    {
-      "stage": "verification",
-      "status": "unverified"
+      "at": "2026-08-17T18:51:57.924386+00:00",
+      "errors": [
+        "missing required field: description",
+        "missing required field: auth_methods",
+        "missing required field: auth_detail",
+        "missing required field: access_model",
+        "missing required field: api_type",
+        "missing required field: api_breadth",
+        "missing required field: mcp_status",
+        "missing required field: main_blocker",
+        "missing required field: confidence",
+        "invalid access_model: None",
+        "invalid api_breadth: None",
+        "invalid mcp_status: None",
+        "confidence must be 0..1, got None"
+      ]
     }
   ],
-  "confidence": 0.95,
-  "evidence_count": 3
+  "queries": [
+    "GitHub API documentation authentication",
+    "GitHub developer API OAuth API key",
+    "GitHub API pricing free trial developer access"
+  ],
+  "sources_found": [],
+  "fetched": [],
+  "errors": [
+    {
+      "stage": "search",
+      "query": "GitHub API documentation authentication",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "GitHub developer API OAuth API key",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "search",
+      "query": "GitHub API pricing free trial developer access",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    },
+    {
+      "stage": "extraction",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)>"
+    }
+  ],
+  "finished_at": "2026-08-17T18:51:57.924394+00:00"
 }
