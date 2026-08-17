@@ -1,0 +1,65 @@
+{
+  "app": "Close",
+  "id": 8,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Close API documentation authentication",
+        "Close developer API OAuth API key",
+        "Close API pricing free trial developer access",
+        "Close official MCP server model context protocol",
+        "Close REST API GraphQL webhooks docs",
+        "Close composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.close.com/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 82,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 1
+}

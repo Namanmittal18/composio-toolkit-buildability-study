@@ -1,0 +1,66 @@
+{
+  "app": "Klaviyo",
+  "id": 36,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Klaviyo API documentation authentication",
+        "Klaviyo developer API OAuth API key",
+        "Klaviyo API pricing free trial developer access",
+        "Klaviyo official MCP server model context protocol",
+        "Klaviyo REST API GraphQL webhooks docs",
+        "Klaviyo composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.klaviyo.com/en/reference/api_overview",
+        "https://www.klaviyo.com/uk/blog/introducing-mcp-server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 100,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

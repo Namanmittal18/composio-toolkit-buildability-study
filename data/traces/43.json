@@ -1,0 +1,66 @@
+{
+  "app": "BigCommerce",
+  "id": 43,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "BigCommerce API documentation authentication",
+        "BigCommerce developer API OAuth API key",
+        "BigCommerce API pricing free trial developer access",
+        "BigCommerce official MCP server model context protocol",
+        "BigCommerce REST API GraphQL webhooks docs",
+        "BigCommerce composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.bigcommerce.com/docs/rest"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "GraphQL",
+          "Webhooks"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 94,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 1
+}

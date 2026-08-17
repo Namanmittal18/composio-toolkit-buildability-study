@@ -1,0 +1,6 @@
+{
+  "outputDirectory": "site",
+  "cleanUrls": true,
+  "framework": null,
+  "buildCommand": null
+}

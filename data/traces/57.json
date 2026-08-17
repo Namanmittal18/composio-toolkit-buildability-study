@@ -1,0 +1,66 @@
+{
+  "app": "Bright Data",
+  "id": 57,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Bright Data API documentation authentication",
+        "Bright Data developer API OAuth API key",
+        "Bright Data API pricing free trial developer access",
+        "Bright Data official MCP server model context protocol",
+        "Bright Data REST API GraphQL webhooks docs",
+        "Bright Data composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.brightdata.com/api-reference/",
+        "https://github.com/brightdata/brightdata-mcp"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Basic Auth"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "Other"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 80,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

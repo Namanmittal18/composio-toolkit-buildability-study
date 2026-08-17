@@ -1,0 +1,66 @@
+{
+  "app": "Telegram",
+  "id": 27,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Telegram API documentation authentication",
+        "Telegram developer API OAuth API key",
+        "Telegram API pricing free trial developer access",
+        "Telegram official MCP server model context protocol",
+        "Telegram REST API GraphQL webhooks docs",
+        "Telegram composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://core.telegram.org/bots/api",
+        "https://github.com/chigwell/telegram-mcp"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks",
+          "Other"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Community"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 3,
+        "doc_quality": 3
+      },
+      "score": 95,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

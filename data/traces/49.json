@@ -1,0 +1,64 @@
+{
+  "app": "Amazon Selling Partner",
+  "id": 49,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Amazon Selling Partner API documentation authentication",
+        "Amazon Selling Partner developer API OAuth API key",
+        "Amazon Selling Partner API pricing free trial developer access",
+        "Amazon Selling Partner official MCP server model context protocol",
+        "Amazon Selling Partner REST API GraphQL webhooks docs",
+        "Amazon Selling Partner composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+        "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Admin approval",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -10,
+        "api_type": 8,
+        "api_breadth": 6,
+        "auth_methods": 3,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 47,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

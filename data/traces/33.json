@@ -1,0 +1,64 @@
+{
+  "app": "LinkedIn Ads",
+  "id": 33,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "LinkedIn Ads API documentation authentication",
+        "LinkedIn Ads developer API OAuth API key",
+        "LinkedIn Ads API pricing free trial developer access",
+        "LinkedIn Ads official MCP server model context protocol",
+        "LinkedIn Ads REST API GraphQL webhooks docs",
+        "LinkedIn Ads composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://learn.microsoft.com/en-us/linkedin/marketing/",
+        "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Partner approval",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -20,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 3,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 35,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

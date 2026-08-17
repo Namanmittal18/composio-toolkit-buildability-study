@@ -1,0 +1,66 @@
+{
+  "app": "GoHighLevel",
+  "id": 34,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "GoHighLevel API documentation authentication",
+        "GoHighLevel developer API OAuth API key",
+        "GoHighLevel API pricing free trial developer access",
+        "GoHighLevel official MCP server model context protocol",
+        "GoHighLevel REST API GraphQL webhooks docs",
+        "GoHighLevel composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://highlevel.stoplight.io/",
+        "https://marketplace.gohighlevel.com/docs/other/mcp/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "API Key"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 82,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

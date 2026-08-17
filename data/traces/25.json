@@ -1,0 +1,65 @@
+{
+  "app": "Pumble",
+  "id": 25,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Pumble API documentation authentication",
+        "Pumble developer API OAuth API key",
+        "Pumble API pricing free trial developer access",
+        "Pumble official MCP server model context protocol",
+        "Pumble REST API GraphQL webhooks docs",
+        "Pumble composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "https://docs.pumble.com/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 88,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

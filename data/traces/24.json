@@ -1,0 +1,65 @@
+{
+  "app": "Lark (Larksuite)",
+  "id": 24,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Lark (Larksuite) API documentation authentication",
+        "Lark (Larksuite) developer API OAuth API key",
+        "Lark (Larksuite) API pricing free trial developer access",
+        "Lark (Larksuite) official MCP server model context protocol",
+        "Lark (Larksuite) REST API GraphQL webhooks docs",
+        "Lark (Larksuite) composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://open.larksuite.com/document/home/index"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "API Key"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 92,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 1
+}

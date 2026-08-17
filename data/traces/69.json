@@ -1,0 +1,65 @@
+{
+  "app": "Datadog",
+  "id": 69,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Datadog API documentation authentication",
+        "Datadog developer API OAuth API key",
+        "Datadog API pricing free trial developer access",
+        "Datadog official MCP server model context protocol",
+        "Datadog REST API GraphQL webhooks docs",
+        "Datadog composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/mcp_server/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 8,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 94,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

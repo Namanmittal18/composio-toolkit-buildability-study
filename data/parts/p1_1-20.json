@@ -1,0 +1,395 @@
+[
+  {
+    "id": 1,
+    "research_method": "kiro_web_search",
+    "description": "Enterprise CRM and application platform for sales, service, and custom business apps.",
+    "auth_methods": ["OAuth 2.0", "JWT"],
+    "auth_detail": "OAuth 2.0 (web server, user-agent, JWT bearer, client-credentials) via a Connected App / External Client App.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "SOAP", "GraphQL", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-org daily API request limits by edition/licenses.",
+    "main_blocker": "Connected App / OAuth setup complexity; production value tied to customer orgs",
+    "evidence": [
+      {"url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm", "source_title": "Salesforce REST API Developer Guide", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth"], "snippet": "REST API provides a Web services API for interacting with Lightning Platform.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developer.salesforce.com/signup", "source_title": "Salesforce Developer Edition signup (free)", "source_type": "official_dev_docs", "supports_fields": ["access_model", "auth_methods"], "snippet": "Free Developer Edition org with full API access.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html", "source_title": "Salesforce Hosted MCP Servers", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Salesforce Hosted MCP Servers use the Model Context Protocol for agentic interoperability.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Developer Edition is free/self-serve; deployments target paid orgs. Hosted MCP GA in 2026."
+  },
+  {
+    "id": 2,
+    "research_method": "kiro_web_search",
+    "description": "Inbound marketing, sales, and CRM platform with a broad developer API.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "OAuth 2.0 for public apps; Private App access tokens (Bearer) for single-account integrations.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developers.hubspot.com/ai-tools/mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-account daily + burst limits by tier.",
+    "main_blocker": "None (advanced objects may need paid tiers)",
+    "evidence": [
+      {"url": "https://developers.hubspot.com/docs/api/private-apps", "source_title": "HubSpot Private Apps (tokens)", "source_type": "official_auth_docs", "supports_fields": ["auth_methods", "access_model"], "snippet": "Create a private app to get an access token used as a Bearer credential.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.hubspot.com/docs/reference/api", "source_title": "HubSpot API reference", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth"], "snippet": "REST APIs across CRM objects, marketing, CMS, and automation.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available", "source_title": "Remote HubSpot MCP GA", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "HubSpot MCP server connects AI tools to your CRM over a HubSpot-hosted OAuth 2.1 connection.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free CRM + developer/test accounts make credentials self-serve."
+  },
+  {
+    "id": 3,
+    "research_method": "kiro_web_search",
+    "description": "Sales-focused CRM for SMBs with pipeline management.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "Per-user API token (API key) and OAuth 2.0 for marketplace apps.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Token-bucket per-token limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developers.pipedrive.com/docs/api/v1", "source_title": "Pipedrive API reference", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth", "auth_methods", "access_model"], "snippet": "REST API with API token (self-serve in-app) or OAuth authentication.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants", "source_title": "Pipedrive native MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Pipedrive launched a native MCP server connecting the CRM to AI assistants.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free trial gives self-serve tokens; sustained use requires a paid plan."
+  },
+  {
+    "id": 4,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Modern, data-model-flexible CRM aimed at startups and technical teams.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API keys (Bearer) generated in workspace settings; OAuth for third-party apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Unknown", "mcp_type": "Unknown", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Documented per-key limits.",
+    "main_blocker": "MCP availability not independently confirmed",
+    "evidence": [
+      {"url": "https://developers.attio.com/", "source_title": "Attio Developer Docs", "source_type": "official_dev_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Attio's API lets you read and write records; authenticate with an API key or OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Auth/access from developer docs (model knowledge); MCP status not verified this run — flag for second pass."
+  },
+  {
+    "id": 5,
+    "research_method": "kiro_web_search",
+    "description": "Open-source CRM (self-hostable) with a fully dynamic API per workspace schema.",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "API keys (Bearer). Self-hosted deployments issue their own tokens.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Community", "mcp_type": "Community", "mcp_evidence_url": "https://lobehub.com/skills/openclaw-skills-twenty-crm",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Self-hosted / plan dependent.",
+    "main_blocker": "Self-hosting or cloud plan needed; no official MCP",
+    "evidence": [
+      {"url": "https://docs.twenty.com/developers/extend/capabilities/apis", "source_title": "Twenty API docs", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth", "auth_methods"], "snippet": "Each workspace gets REST and GraphQL endpoints; custom objects immediately get endpoints.", "retrieved_at": "2026-08-17"},
+      {"url": "https://twenty.com/pricing", "source_title": "Twenty pricing / free trial", "source_type": "official_pricing", "supports_fields": ["access_model"], "snippet": "Open-source; cloud free trial without credit card.", "retrieved_at": "2026-08-17"},
+      {"url": "https://lobehub.com/skills/openclaw-skills-twenty-crm", "source_title": "Community Twenty CRM skill/MCP", "source_type": "secondary_docs", "supports_fields": ["mcp_status"], "snippet": "Community skill provides programmatic access to Twenty via REST/GraphQL.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Open-source (self-host free) is the strongest self-serve path; only community MCP exists."
+  },
+  {
+    "id": 6,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Low-code work/collaboration platform (Citrix) with CRM-style apps.",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "OAuth 2.0 and API keys/app tokens.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Rate-limited per API docs.",
+    "main_blocker": "Legacy platform with limited ongoing investment",
+    "evidence": [
+      {"url": "https://developers.podio.com/", "source_title": "Podio for Developers", "source_type": "official_dev_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Podio's REST API with OAuth authentication for building apps on the platform.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.65,
+    "notes": "Well-documented REST API historically; product is legacy. MCP not found."
+  },
+  {
+    "id": 7,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "CRM within the Zoho suite for sales pipeline and automation.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0 (self-client, server-based, and client-credentials) with data-center-specific endpoints.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Unknown", "mcp_type": "Unknown", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Credit/day-based API limits by edition.",
+    "main_blocker": "OAuth + data-center setup complexity",
+    "evidence": [
+      {"url": "https://www.zoho.com/crm/developer/docs/api/v6/", "source_title": "Zoho CRM API v6", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Zoho CRM REST API uses OAuth 2.0; free edition available.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free edition + self-client tokens are self-serve. MCP not verified this run."
+  },
+  {
+    "id": 8,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Inside-sales CRM with calling and email built in.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API key (Basic) and OAuth 2.0 for integrations.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developer.close.com/", "source_title": "Close API docs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Close REST API authenticated with an API key.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free trial yields self-serve API key; sustained use is paid."
+  },
+  {
+    "id": 9,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "CRM tightly integrated with Google Workspace.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key + user email token in headers.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Documented per-key limits.",
+    "main_blocker": "Paid plan required",
+    "evidence": [
+      {"url": "https://developer.copper.com/", "source_title": "Copper Developer API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Copper REST API authenticated with an API key and user email.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "API keys are self-serve for customers; product is paid."
+  },
+  {
+    "id": 10,
+    "research_method": "kiro_web_search",
+    "description": "CRM/deal management platform for private capital markets (PE/VC/advisory).",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "OAuth 2.0 client-credentials for bearer tokens; API keys enabled per user group by an admin.",
+    "access_model": "Enterprise-only",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://api.docs.dealcloud.com/mcp/authentication",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-tenant API limits.",
+    "main_blocker": "Enterprise customer + admin must enable API access",
+    "evidence": [
+      {"url": "https://api.docs.dealcloud.com/docs/token", "source_title": "DealCloud OAuth2 token", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token.", "retrieved_at": "2026-08-17"},
+      {"url": "https://api.docs.dealcloud.com/docs/apikeys", "source_title": "Obtaining an API Key", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "To enable API access, an admin assigns the user to a group with the API capability.", "retrieved_at": "2026-08-17"},
+      {"url": "https://api.docs.dealcloud.com/mcp/authentication", "source_title": "DealCloud MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "DealCloud MCP uses OAuth to let AI assistants connect on behalf of a signed-in user.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "API + first-party MCP are well documented, but access requires being an enterprise customer with admin-enabled API."
+  },
+  {
+    "id": 11,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Customer support suite (ticketing, help center, messaging).",
+    "auth_methods": ["OAuth 2.0", "API Key", "Basic Auth"],
+    "auth_detail": "API token (used with email as Basic), OAuth 2.0, and bearer tokens.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-plan rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developer.zendesk.com/api-reference/", "source_title": "Zendesk API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Zendesk REST APIs support API tokens, OAuth, and basic authentication.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Trial gives self-serve tokens; broad REST surface. Official MCP not found this run."
+  },
+  {
+    "id": 12,
+    "research_method": "kiro_web_search",
+    "description": "Customer communications platform (live chat, help desk, Fin AI agent).",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "OAuth 2.0 and workspace access tokens (Bearer).",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developers.intercom.com/docs/guides/mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-app rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developers.intercom.com/docs/references/rest-api/api.intercom.io/", "source_title": "Intercom REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Intercom REST API with OAuth and access tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.intercom.com/docs/guides/mcp", "source_title": "Intercom MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Intercom hosts a remote MCP server following the authenticated remote MCP spec.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Hosted remote MCP confirmed; API self-serve via developer workspace."
+  },
+  {
+    "id": 13,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Freshworks' cloud help desk / ticketing system.",
+    "auth_methods": ["API Key", "Basic Auth"],
+    "auth_detail": "API key used as username in HTTP Basic auth.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-plan rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developers.freshdesk.com/api/", "source_title": "Freshdesk API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Freshdesk REST API authenticated with an API key via HTTP Basic.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Free trial gives self-serve API key."
+  },
+  {
+    "id": 14,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Shared inbox / customer operations platform.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "API tokens (Bearer/JWT) and OAuth 2.0 for integrations.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://dev.frontapp.com/", "source_title": "Front API docs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Front's REST API uses API tokens and OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Self-serve tokens; MCP not found."
+  },
+  {
+    "id": 15,
+    "research_method": "kiro_web_search",
+    "description": "B2B support platform for customer-facing teams (tickets, KB, custom apps).",
+    "auth_methods": ["Bearer Token", "API Key"],
+    "auth_detail": "Bearer authentication using an API token; only Admin users can create tokens.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Documented per-token limits.",
+    "main_blocker": "Paid product; only admins can mint API tokens",
+    "evidence": [
+      {"url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication", "source_title": "Pylon API authentication", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "The Pylon API uses Bearer authentication.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.usepylon.com/integrations/api-webhooks", "source_title": "Pylon API & Webhooks", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "As an Admin, generate an API token; only Admin users can create API tokens.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Within a paying org, admins self-serve tokens."
+  },
+  {
+    "id": 16,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Help desk software with ticketing, live chat, and call center.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key passed as a parameter/header.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Documented per-key limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://support.liveagent.com/802463-REST-API", "source_title": "LiveAgent API docs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "LiveAgent REST API authenticated with an API key.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.65,
+    "notes": "Self-serve key within trial/paid account."
+  },
+  {
+    "id": 17,
+    "research_method": "kiro_web_search",
+    "description": "Developer-centric customer support platform with a GraphQL-first API.",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "API keys created in Settings; sent as Authorization: Bearer.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["GraphQL", "Webhooks", "SDK"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Documented per-key limits.",
+    "main_blocker": "Paid product (self-serve keys)",
+    "evidence": [
+      {"url": "https://www.plain.com/docs/graphql/introduction", "source_title": "Plain GraphQL API", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth", "auth_methods"], "snippet": "Authorization: Bearer YOUR_TOKEN where the token is your API key.", "retrieved_at": "2026-08-17"},
+      {"url": "https://help.plain.com/article/api-quickstart", "source_title": "Plain API quickstart", "source_type": "official_support", "supports_fields": ["access_model"], "snippet": "Generate an API key from Settings -> API Keys in your Plain workspace.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "GraphQL + SDK + webhooks; keys are self-serve; MCP not found."
+  },
+  {
+    "id": 18,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Simple, email-based help desk and shared inbox.",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "OAuth 2.0 and API keys (Mailbox/Docs APIs).",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Paid plan required for ongoing use",
+    "evidence": [
+      {"url": "https://developer.helpscout.com/", "source_title": "Help Scout Developers", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Help Scout Mailbox API uses OAuth2 and API keys.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Self-serve credentials for customers."
+  },
+  {
+    "id": 19,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Helpdesk built for ecommerce (Shopify-centric) support.",
+    "auth_methods": ["Basic Auth", "API Key", "OAuth 2.0"],
+    "auth_detail": "API key/username (Basic) and OAuth for public apps.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-account rate limits.",
+    "main_blocker": "Paid plan required",
+    "evidence": [
+      {"url": "https://developers.gorgias.com/", "source_title": "Gorgias Developers", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Gorgias REST API with Basic auth (API key) and OAuth apps.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Self-serve keys within paid account."
+  },
+  {
+    "id": 20,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Enterprise customer service platform centered on people, not tickets.",
+    "auth_methods": ["Bearer Token", "API Key"],
+    "auth_detail": "API tokens issued to enterprise customers.",
+    "access_model": "Contact sales",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Per-contract limits.",
+    "main_blocker": "Enterprise-only; no self-serve signup",
+    "evidence": [
+      {"url": "https://developer.gladly.com/", "source_title": "Gladly Developer docs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Gladly REST API for enterprise customer service.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.gladly.com/", "source_title": "Gladly (enterprise, contact sales)", "source_type": "official_support", "supports_fields": ["access_model"], "snippet": "Gladly is sold to enterprises via sales, without self-serve signup.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.6,
+    "notes": "Enterprise sales motion gates access; API exists for customers."
+  }
+]

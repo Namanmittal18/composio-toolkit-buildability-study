@@ -1,0 +1,65 @@
+{
+  "app": "Clay",
+  "id": 60,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Clay API documentation authentication",
+        "Clay developer API OAuth API key",
+        "Clay API pricing free trial developer access",
+        "Clay official MCP server model context protocol",
+        "Clay REST API GraphQL webhooks docs",
+        "Clay composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.clay.com/public-api/authentication",
+        "https://developers.clay.com/quickstart"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "CLI"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 68,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

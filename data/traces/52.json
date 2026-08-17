@@ -1,0 +1,63 @@
+{
+  "app": "SE Ranking",
+  "id": 52,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "SE Ranking API documentation authentication",
+        "SE Ranking developer API OAuth API key",
+        "SE Ranking API pricing free trial developer access",
+        "SE Ranking official MCP server model context protocol",
+        "SE Ranking REST API GraphQL webhooks docs",
+        "SE Ranking composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://seranking.com/api.html"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 68,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 1
+}

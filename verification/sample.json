@@ -1,0 +1,5870 @@
+[
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.attio.com/mcp/overview",
+    "error_type": "MCP false negative",
+    "correction": "Unknown -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "error_type": "MCP false negative",
+    "correction": "Unknown -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "First-party documented",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+    "error_type": "MCP false negative",
+    "correction": "None found -> First-party documented",
+    "pass": 1
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/docs/mcp-server",
+    "error_type": "MCP false negative",
+    "correction": "None found -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Basic Auth",
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "Basic Auth",
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Community",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+    "error_type": "MCP false negative",
+    "correction": "None found -> Community",
+    "pass": 1
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "error_type": "MCP false negative",
+    "correction": "None found -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "auth_methods",
+    "agent_answer": [
+      "JWT",
+      "OAuth 2.0",
+      "Personal Access Token"
+    ],
+    "verified_answer": [
+      "JWT",
+      "OAuth 2.0",
+      "Personal Access Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
+    "error_type": "MCP false negative",
+    "correction": "Unknown -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "error_type": "MCP false negative",
+    "correction": "None found -> Official",
+    "pass": 1
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/keys",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Personal Access Token",
+      "JWT"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Personal Access Token",
+      "JWT"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/github/github-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/apis/web-api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/apis/web-api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/makenotion/notion-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/reference/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/reference/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/ai-tools/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/apps/build/storefront-mcp/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Basic Auth",
+      "API Key"
+    ],
+    "verified_answer": [
+      "Basic Auth",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.klaviyo.com/uk/blog/introducing-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/faq",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Admin approval",
+    "verified_answer": "Admin approval",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Contact sales",
+    "verified_answer": "Contact sales",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/products/direct-access-data",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Narrow",
+    "verified_answer": "Narrow",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/mcp/authentication",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.salesforce.com/products/commerce/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "auth_methods",
+    "agent_answer": [
+      "None"
+    ],
+    "verified_answer": [
+      "None"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "access_model",
+    "agent_answer": "No public API",
+    "verified_answer": "No public API",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "api_type",
+    "agent_answer": [
+      "CLI"
+    ],
+    "verified_answer": [
+      "CLI"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "api_breadth",
+    "agent_answer": "Not applicable",
+    "verified_answer": "Not applicable",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "None"
+    ],
+    "verified_answer": [
+      "None"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "No public API",
+    "verified_answer": "No public API",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "CLI"
+    ],
+    "verified_answer": [
+      "CLI"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Not applicable",
+    "verified_answer": "Not applicable",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://zapier.com/apps/fanbasis/integrations",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Other"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Other"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Contact sales",
+    "verified_answer": "Contact sales",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "Other"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "Other"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Community",
+    "verified_answer": "Community",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/chigwell/telegram-mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://grain.com/release-note/grain-mcp-and-api-updates",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://higgsfield.ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "CLI",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "CLI",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://higgsfield.ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 1
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.attio.com/mcp/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.attio.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Basic Auth"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.freshdesk.com/api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/docs/mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Front",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://dev.frontapp.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Basic Auth",
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "Basic Auth",
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "mcp_status",
+    "agent_answer": "Community",
+    "verified_answer": "Community",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.gorgias.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/restapi/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "auth_methods",
+    "agent_answer": [
+      "JWT",
+      "OAuth 2.0",
+      "Personal Access Token"
+    ],
+    "verified_answer": [
+      "JWT",
+      "OAuth 2.0",
+      "Personal Access Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://smartsheet.redoc.ly/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/keys",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.stripe.com/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Personal Access Token",
+      "JWT"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Personal Access Token",
+      "JWT"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/github/github-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data Platforms",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.github.com/en/rest",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/apis/web-api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/apis/web-api/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.slack.dev/authentication/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/makenotion/notion-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Notion",
+    "category": "Productivity and Project Management",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.notion.com/reference/intro",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "Bearer Token"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/reference/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/reference/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/ai-tools/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.hubspot.com/docs/api/private-apps",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "GraphQL",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/apps/build/storefront-mcp/index",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Shopify",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://shopify.dev/docs/api/admin",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Basic Auth",
+      "API Key"
+    ],
+    "verified_answer": [
+      "Basic Auth",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve trial",
+    "verified_answer": "Self-serve trial",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Twilio",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.twilio.com/docs/usage/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.klaviyo.com/uk/blog/introducing-mcp-server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.klaviyo.com/en/reference/api_overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/faq",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Fathom",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.fathom.ai/quickstart",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Bearer Token",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Admin approval",
+    "verified_answer": "Admin approval",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Very broad",
+    "verified_answer": "Very broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Contact sales",
+    "verified_answer": "Contact sales",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/products/direct-access-data",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "PitchBook",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://pitchbook.com/help/PitchBook-api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Narrow",
+    "verified_answer": "Narrow",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "verified_answer": [
+      "OAuth 2.0",
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/apikeys",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/mcp/authentication",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Enterprise-only",
+    "verified_answer": "Enterprise-only",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.salesforce.com/products/commerce/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST"
+    ],
+    "verified_answer": [
+      "REST"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "auth_methods",
+    "agent_answer": [
+      "None"
+    ],
+    "verified_answer": [
+      "None"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "access_model",
+    "agent_answer": "No public API",
+    "verified_answer": "No public API",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "api_type",
+    "agent_answer": [
+      "CLI"
+    ],
+    "verified_answer": [
+      "CLI"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "api_breadth",
+    "agent_answer": "Not applicable",
+    "verified_answer": "Not applicable",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/sherlock-project/sherlock",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "None"
+    ],
+    "verified_answer": [
+      "None"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "No public API",
+    "verified_answer": "No public API",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "CLI"
+    ],
+    "verified_answer": [
+      "CLI"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Not applicable",
+    "verified_answer": "Not applicable",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/mermaid-js/mermaid-cli",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://zapier.com/apps/fanbasis/integrations",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.fanbasis.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "Unknown"
+    ],
+    "verified_answer": [
+      "Unknown"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Unknown",
+    "verified_answer": "Unknown",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "iPayX",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Not currently feasible",
+    "verified_answer": "Not currently feasible",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://ipayx.ai/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "Other"
+    ],
+    "verified_answer": [
+      "API Key",
+      "Other"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "access_model",
+    "agent_answer": "Contact sales",
+    "verified_answer": "Contact sales",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "SDK"
+    ],
+    "verified_answer": [
+      "REST",
+      "SDK"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "field": "buildability",
+    "agent_answer": "Hard",
+    "verified_answer": "Hard",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://www.paygent.co.jp/payment_service/connect/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "API Key",
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "None found",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Squarespace",
+    "category": "Ecommerce",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.squarespace.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "access_model",
+    "agent_answer": "Self-serve free",
+    "verified_answer": "Self-serve free",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks",
+      "Other"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks",
+      "Other"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "api_breadth",
+    "agent_answer": "Broad",
+    "verified_answer": "Broad",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "mcp_status",
+    "agent_answer": "Community",
+    "verified_answer": "Community",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://github.com/chigwell/telegram-mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Telegram",
+    "category": "Communications and Messaging",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://core.telegram.org/bots/api",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "OAuth 2.0"
+    ],
+    "verified_answer": [
+      "OAuth 2.0"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "First-party documented",
+    "verified_answer": "First-party documented",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://grain.com/release-note/grain-mcp-and-api-updates",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "Grain",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Medium",
+    "verified_answer": "Medium",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://developers.grain.com/",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "auth_methods",
+    "agent_answer": [
+      "API Key"
+    ],
+    "verified_answer": [
+      "API Key"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "access_model",
+    "agent_answer": "Self-serve paid",
+    "verified_answer": "Self-serve paid",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://higgsfield.ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "api_type",
+    "agent_answer": [
+      "REST",
+      "CLI",
+      "Webhooks"
+    ],
+    "verified_answer": [
+      "REST",
+      "CLI",
+      "Webhooks"
+    ],
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "api_breadth",
+    "agent_answer": "Moderate",
+    "verified_answer": "Moderate",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "mcp_status",
+    "agent_answer": "Official",
+    "verified_answer": "Official",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://higgsfield.ai/mcp",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  },
+  {
+    "app": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "field": "buildability",
+    "agent_answer": "Easy",
+    "verified_answer": "Easy",
+    "correct": true,
+    "verification_method": "independent second-pass search + primary docs",
+    "evidence_url": "https://docs.higgsfield.ai/docs",
+    "error_type": null,
+    "correction": null,
+    "pass": 2
+  }
+]

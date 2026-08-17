@@ -1,0 +1,67 @@
+{
+  "app": "Slack",
+  "id": 21,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Slack API documentation authentication",
+        "Slack developer API OAuth API key",
+        "Slack API pricing free trial developer access",
+        "Slack official MCP server model context protocol",
+        "Slack REST API GraphQL webhooks docs",
+        "Slack composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/apis/web-api/",
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 100,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 3
+}

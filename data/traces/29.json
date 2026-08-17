@@ -1,0 +1,66 @@
+{
+  "app": "Aircall",
+  "id": 29,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Aircall API documentation authentication",
+        "Aircall developer API OAuth API key",
+        "Aircall API pricing free trial developer access",
+        "Aircall official MCP server model context protocol",
+        "Aircall REST API GraphQL webhooks docs",
+        "Aircall composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.aircall.io/api-references/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Basic Auth",
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 70,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 1
+}

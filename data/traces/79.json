@@ -1,0 +1,66 @@
+{
+  "app": "Smartsheet",
+  "id": 79,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Smartsheet API documentation authentication",
+        "Smartsheet developer API OAuth API key",
+        "Smartsheet API pricing free trial developer access",
+        "Smartsheet official MCP server model context protocol",
+        "Smartsheet REST API GraphQL webhooks docs",
+        "Smartsheet composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://smartsheet.redoc.ly/",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Bearer Token",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 94,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

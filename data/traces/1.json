@@ -1,0 +1,69 @@
+{
+  "app": "Salesforce",
+  "id": 1,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Salesforce API documentation authentication",
+        "Salesforce developer API OAuth API key",
+        "Salesforce API pricing free trial developer access",
+        "Salesforce official MCP server model context protocol",
+        "Salesforce REST API GraphQL webhooks docs",
+        "Salesforce composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_rest.htm",
+        "https://developer.salesforce.com/signup",
+        "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "JWT"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "SOAP",
+          "GraphQL",
+          "Webhooks"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 6,
+        "auth_methods": 3,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 100,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 3
+}

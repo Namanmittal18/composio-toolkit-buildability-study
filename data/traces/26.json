@@ -1,0 +1,67 @@
+{
+  "app": "Discord",
+  "id": 26,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Discord API documentation authentication",
+        "Discord developer API OAuth API key",
+        "Discord API pricing free trial developer access",
+        "Discord official MCP server model context protocol",
+        "Discord REST API GraphQL webhooks docs",
+        "Discord composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://discord.com/developers/docs/reference",
+        "https://github.com/v-3/discordmcp"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks",
+          "Other"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Community"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 3,
+        "doc_quality": 3
+      },
+      "score": 95,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

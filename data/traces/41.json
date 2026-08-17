@@ -1,0 +1,67 @@
+{
+  "app": "Shopify",
+  "id": 41,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Shopify API documentation authentication",
+        "Shopify developer API OAuth API key",
+        "Shopify API pricing free trial developer access",
+        "Shopify official MCP server model context protocol",
+        "Shopify REST API GraphQL webhooks docs",
+        "Shopify composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://shopify.dev/docs/api/admin",
+        "https://shopify.dev/docs/apps/build/storefront-mcp/index"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "GraphQL",
+          "Webhooks"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 100,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 2
+}

@@ -1,0 +1,65 @@
+{
+  "app": "Attio",
+  "id": 4,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Attio API documentation authentication",
+        "Attio developer API OAuth API key",
+        "Attio API pricing free trial developer access",
+        "Attio official MCP server model context protocol",
+        "Attio REST API GraphQL webhooks docs",
+        "Attio composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.attio.com/",
+        "https://docs.attio.com/mcp/overview"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 98,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 2
+}

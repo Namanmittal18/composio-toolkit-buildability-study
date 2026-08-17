@@ -1,0 +1,63 @@
+{
+  "app": "iPayX",
+  "id": 85,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "iPayX API documentation authentication",
+        "iPayX developer API OAuth API key",
+        "iPayX API pricing free trial developer access",
+        "iPayX official MCP server model context protocol",
+        "iPayX REST API GraphQL webhooks docs",
+        "iPayX composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://ipayx.ai/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Unknown"
+        ],
+        "access_model": "Unknown",
+        "api_type": [
+          "Unknown"
+        ],
+        "api_breadth": "Unknown",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -12,
+        "api_type": -8,
+        "api_breadth": -3,
+        "auth_methods": -6,
+        "mcp_status": 0,
+        "doc_quality": -6
+      },
+      "score": 5,
+      "label": "Not currently feasible"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.3,
+  "evidence_count": 1
+}

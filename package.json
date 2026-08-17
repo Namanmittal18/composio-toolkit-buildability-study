@@ -1,0 +1,14 @@
+{
+  "name": "composio-ai-product-ops",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Evidence-backed agentic research pipeline assessing whether 100 apps can become agent-callable Composio toolkits, with a single-page HTML case study.",
+  "scripts": {
+    "build:site": "python3 scripts/build_site.py",
+    "validate": "python3 scripts/validate_dataset.py",
+    "analyze": "python3 scripts/analyze.py",
+    "accuracy": "python3 scripts/compute_accuracy.py",
+    "serve": "python3 -m http.server 8080 --directory site"
+  },
+  "license": "MIT"
+}

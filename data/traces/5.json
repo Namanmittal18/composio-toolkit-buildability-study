@@ -1,0 +1,68 @@
+{
+  "app": "Twenty",
+  "id": 5,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Twenty API documentation authentication",
+        "Twenty developer API OAuth API key",
+        "Twenty API pricing free trial developer access",
+        "Twenty official MCP server model context protocol",
+        "Twenty REST API GraphQL webhooks docs",
+        "Twenty composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.twenty.com/developers/extend/capabilities/apis",
+        "https://twenty.com/pricing",
+        "https://lobehub.com/skills/openclaw-skills-twenty-crm"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "GraphQL",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Community"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 3,
+        "doc_quality": 3
+      },
+      "score": 93,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 3
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "id": 41,
+    "research_method": "kiro_web_search",
+    "description": "Leading ecommerce platform with Admin, Storefront, and GraphQL APIs.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "Admin API access tokens (API key) for custom apps; OAuth 2.0 for public apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://shopify.dev/docs/apps/build/storefront-mcp/index",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "GraphQL cost-based + REST leaky-bucket limits.",
+    "main_blocker": "None (free partner/dev stores)",
+    "evidence": [
+      {"url": "https://shopify.dev/docs/api/admin", "source_title": "Shopify Admin API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Admin API available as GraphQL and REST; tokens via custom or OAuth apps.", "retrieved_at": "2026-08-17"},
+      {"url": "https://shopify.dev/docs/apps/build/storefront-mcp/index", "source_title": "Shopify Storefront MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Storefront MCP servers provide structured access to Shopify commerce data.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free dev stores make credentials self-serve; official MCP servers exist."
+  },
+  {
+    "id": 42,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Open-source ecommerce plugin for WordPress with a REST API.",
+    "auth_methods": ["API Key", "Basic Auth"],
+    "auth_detail": "Consumer key/secret over HTTPS Basic auth; generated in WP admin.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Host-dependent (self-hosted).",
+    "main_blocker": "Requires your own WordPress/WooCommerce host",
+    "evidence": [
+      {"url": "https://woocommerce.com/document/woocommerce-rest-api/", "source_title": "WooCommerce REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST API with consumer key/secret authentication.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Open-source, self-hosted; keys self-serve in wp-admin."
+  },
+  {
+    "id": 43,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Headless-friendly ecommerce platform with REST + GraphQL APIs.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "X-Auth-Token API accounts and OAuth 2.0 for apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-plan API rate limits.",
+    "main_blocker": "None (free dev sandbox stores)",
+    "evidence": [
+      {"url": "https://developer.bigcommerce.com/docs/rest", "source_title": "BigCommerce REST APIs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST + GraphQL Storefront APIs; X-Auth-Token and OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Free sandbox stores; self-serve API accounts."
+  },
+  {
+    "id": 44,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Salesforce B2C Commerce Cloud (Commerce API / SCAPI).",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "SLAS (Shopper Login and API Access Service) OAuth 2.0.",
+    "access_model": "Enterprise-only",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Per-instance quotas.",
+    "main_blocker": "Enterprise product; access via customer/partner instance",
+    "evidence": [
+      {"url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview", "source_title": "Commerce Cloud Commerce API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "B2C Commerce API (SCAPI) uses SLAS OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.salesforce.com/products/commerce/", "source_title": "Commerce Cloud (enterprise)", "source_type": "official_support", "supports_fields": ["access_model"], "snippet": "Enterprise commerce platform sold via sales; sandboxes provisioned to customers/partners.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "APIs well-documented but require an enterprise B2C Commerce instance."
+  },
+  {
+    "id": 45,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Magento Open Source / Adobe Commerce ecommerce platform.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "Integration tokens (Bearer), admin/customer tokens, and OAuth.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "SOAP"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Host-dependent (self-hosted).",
+    "main_blocker": "Self-host Magento Open Source; Adobe Commerce (cloud) is paid",
+    "evidence": [
+      {"url": "https://developer.adobe.com/commerce/webapi/rest/", "source_title": "Adobe Commerce / Magento REST", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST, GraphQL, and SOAP web APIs with token-based auth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Magento Open Source is free/self-host; Adobe Commerce cloud is enterprise."
+  },
+  {
+    "id": 46,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Website builder with Commerce/Orders/Inventory APIs.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API keys (self-serve) and OAuth for marketplace apps.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Commerce APIs require a paid Commerce plan",
+    "evidence": [
+      {"url": "https://developers.squarespace.com/", "source_title": "Squarespace Developer APIs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Commerce, Orders, Inventory and Products REST APIs with API keys/OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Keys self-serve, but commerce endpoints need a paid plan."
+  },
+  {
+    "id": 47,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Ecommerce widget/platform that adds a store to any site.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "Access tokens (Bearer) and OAuth for public apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-store rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://api-docs.ecwid.com/reference/overview", "source_title": "Ecwid REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Ecwid REST API with token/OAuth authentication.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Self-serve tokens; free tier."
+  },
+  {
+    "id": 48,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Platform to sell digital products/memberships to an audience.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "Access token (Bearer) and OAuth 2.0 applications.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Narrow",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Documented per-token limits.",
+    "main_blocker": "Narrow API surface",
+    "evidence": [
+      {"url": "https://gumroad.com/api", "source_title": "Gumroad API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Gumroad REST API with OAuth access tokens.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Self-serve tokens; narrow but usable API."
+  },
+  {
+    "id": 49,
+    "research_method": "kiro_web_search",
+    "description": "Amazon's API for sellers to manage listings, orders, fulfillment, finances, and reports.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "Login with Amazon (LWA) OAuth 2.0; requires a registered SP-API application.",
+    "access_model": "Admin approval",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Per-operation rate + burst (usage plans).",
+    "main_blocker": "Developer registration + Amazon approval and a Professional selling account",
+    "evidence": [
+      {"url": "https://developer-docs.amazon.com/sp-api/docs/registering-as-a-developer", "source_title": "Register as an SP-API Developer", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "Register as a Selling Partner API developer before registering your application; access granted based on your developer profile.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developer-docs.amazon.com/sp-api/docs/connecting-to-the-selling-partner-api", "source_title": "Connecting to SP-API (LWA)", "source_type": "official_auth_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "SP-API uses LWA OAuth 2.0 tokens over REST.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Broad public API but gated behind registration, approval, and a paid seller account."
+  },
+  {
+    "id": 50,
+    "research_method": "kiro_web_search",
+    "description": "Creator monetization / payments platform (rebranded to Commas); sells courses, communities, payments.",
+    "auth_methods": ["Unknown"],
+    "auth_detail": "No public developer/API documentation found. A Zapier integration exists (triggers such as Charge Disputed, Subscription Renewal), implying webhook/partner connectivity but not a documented self-serve public API.",
+    "access_model": "Unknown",
+    "credential_self_serve": null, "free_or_trial_access": null, "paid_plan_required": null, "admin_approval_required": null, "partner_or_contact_sales": null,
+    "api_type": ["Unknown"],
+    "api_breadth": "Unknown",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "poor", "sandbox_available": null, "rate_limits": "Unknown",
+    "main_blocker": "No public developer API documentation found (only a Zapier partner integration)",
+    "evidence": [
+      {"url": "https://www.fanbasis.com/", "source_title": "FanBasis home", "source_type": "official_support", "supports_fields": ["access_model"], "snippet": "Payments-to-fulfillment platform for selling knowledge/services; no developer/API docs surfaced.", "retrieved_at": "2026-08-17"},
+      {"url": "https://zapier.com/apps/fanbasis/integrations", "source_title": "FanBasis on Zapier", "source_type": "secondary_docs", "supports_fields": ["api_type"], "snippet": "FanBasis exposes triggers (e.g. Charge Disputed, Subscription Renewal) via Zapier.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.4,
+    "notes": "Could not verify a self-serve public API. Honest Unknown; only a Zapier integration is evident."
+  },
+  {
+    "id": 51,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "SEO/SERP data APIs (rankings, keywords, backlinks) on pay-as-you-go.",
+    "auth_methods": ["Basic Auth", "API Key"],
+    "auth_detail": "API login + password via HTTP Basic.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Unknown", "mcp_type": "Unknown", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-account throughput limits.",
+    "main_blocker": "Prepaid funding required (no free tier)",
+    "evidence": [
+      {"url": "https://docs.dataforseo.com/v3/", "source_title": "DataForSEO API v3", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST API authenticated with Basic auth (login + password).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Self-serve signup but requires funding; MCP not verified this run."
+  },
+  {
+    "id": 52,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "SEO platform (rank tracking, audits) with a data API.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key/token from account settings.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-plan API limits.",
+    "main_blocker": "Paid plan required",
+    "evidence": [
+      {"url": "https://seranking.com/api.html", "source_title": "SE Ranking API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "SE Ranking REST API authenticated with an API key.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Self-serve key on a paid plan."
+  },
+  {
+    "id": 53,
+    "research_method": "kiro_web_search",
+    "description": "SEO toolset providing backlink, keyword, rank-tracking, and site-audit data.",
+    "auth_methods": ["API Key", "Bearer Token", "OAuth 2.0"],
+    "auth_detail": "API v3 uses an API key as a Bearer token; Ahrefs Connect adds OAuth 2.0.",
+    "access_model": "Enterprise-only",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Unit-based consumption; min 50 units/request.",
+    "main_blocker": "API v3 access tied to the Enterprise plan",
+    "evidence": [
+      {"url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3", "source_title": "About API v3 (Ahrefs Help)", "source_type": "official_support", "supports_fields": ["access_model", "paid_plan_required"], "snippet": "API v3 access is available to Enterprise plan users.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management", "source_title": "API keys creation", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type"], "snippet": "Provide the API key as Authorization: Bearer YOUR_API_KEY.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.ahrefs.com/en/mcp/docs/introduction", "source_title": "Ahrefs MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Ahrefs MCP lets AI agents securely access the Ahrefs API.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "API + first-party MCP exist, but credentials require the paid Enterprise plan."
+  },
+  {
+    "id": 54,
+    "research_method": "kiro_web_search",
+    "description": "Developer-first web scraping API with AI extraction and residential proxies.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API token in request headers; proxies use username/password.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Token-based (100 free tokens/month).",
+    "main_blocker": "None (free plan, no credit card)",
+    "evidence": [
+      {"url": "https://docs.mrscraper.com/docs/api/authentication", "source_title": "MrScraper API authentication", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "The MrScraper API uses API token authentication for all endpoints.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.mrscraper.com/docs/getting-started/billing", "source_title": "MrScraper billing", "source_type": "official_pricing", "supports_fields": ["access_model"], "snippet": "Free plan includes 100 tokens per month with no credit card required.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve free tier; clean developer docs."
+  },
+  {
+    "id": 55,
+    "research_method": "kiro_web_search",
+    "description": "Web scraping/automation cloud with thousands of ready-made Actors.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API token and OAuth 2.0; SDKs for JS/Python.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "SDK"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/apify/actors-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-account API rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://docs.apify.com/api/v2", "source_title": "Apify API v2", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Apify REST API + SDKs; API token authentication.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/apify/actors-mcp-server", "source_title": "Apify Actors MCP server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "The Apify MCP server enables AI agents to run Apify Actors/scrapers.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free tier; official MCP exposing the Actor catalog."
+  },
+  {
+    "id": 56,
+    "research_method": "kiro_web_search",
+    "description": "Web scraping/crawling API that returns clean, LLM-ready content.",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "API key sent as Bearer; SDKs for JS/Python.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "SDK"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/firecrawl/firecrawl-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Credit/plan based.",
+    "main_blocker": "None (free credits + self-serve key)",
+    "evidence": [
+      {"url": "https://docs.firecrawl.dev/api-reference/introduction", "source_title": "Firecrawl API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Firecrawl REST API + SDKs; Bearer API key.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/firecrawl/firecrawl-mcp-server", "source_title": "Firecrawl MCP server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "Official MCP server bringing Firecrawl to MCP-compatible AI agents.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Self-serve free credits; official MCP."
+  },
+  {
+    "id": 57,
+    "research_method": "kiro_web_search",
+    "description": "Web data platform: proxies, scraping/unlocking, and datasets.",
+    "auth_methods": ["API Key", "Basic Auth"],
+    "auth_detail": "API tokens plus proxy zone credentials (username/password).",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/brightdata/brightdata-mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Plan/zone based.",
+    "main_blocker": "KYC + paid plan for most products",
+    "evidence": [
+      {"url": "https://docs.brightdata.com/api-reference/", "source_title": "Bright Data API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "APIs + proxy products with API-token auth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/brightdata/brightdata-mcp", "source_title": "Bright Data MCP", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "Official MCP server providing all-in-one public web access (60+ tools).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Self-serve signup + trial, but production needs paid plan/KYC; official MCP."
+  },
+  {
+    "id": 58,
+    "research_method": "kiro_web_search",
+    "description": "Open-source command-line OSINT tool that hunts usernames across social networks.",
+    "auth_methods": ["None"],
+    "auth_detail": "No API keys or login credentials; constructs profile URLs and inspects responses. Runs locally.",
+    "access_model": "No public API",
+    "credential_self_serve": null, "free_or_trial_access": null, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["CLI"],
+    "api_breadth": "Not applicable",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": null, "rate_limits": "Not applicable (local tool).",
+    "main_blocker": "Product is a local CLI/library, not a hosted callable API",
+    "evidence": [
+      {"url": "https://github.com/sherlock-project/sherlock", "source_title": "sherlock-project/sherlock", "source_type": "official_repo", "supports_fields": ["api_type", "access_model"], "snippet": "Hunt down social media accounts by username across social networks (CLI).", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md", "source_title": "Bellingcat toolkit: Sherlock", "source_type": "secondary_docs", "supports_fields": ["auth_methods"], "snippet": "It does not require API keys or login credentials for the sites it checks.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Trap app: not a hosted SaaS API. Could be shelled out to, but not an agent-callable hosted API."
+  },
+  {
+    "id": 59,
+    "research_method": "kiro_web_search",
+    "description": "B2B contact/company data API (find, enrich, verify contacts).",
+    "auth_methods": ["API Key"],
+    "auth_detail": "x-api-key header; usage/prepaid-balance billing.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Usage/credit based.",
+    "main_blocker": "Usage-based billing (prepaid balance)",
+    "evidence": [
+      {"url": "https://docs.waterfall.io/v1/introduction", "source_title": "Waterfall.io API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST API (api.waterfall.io/v1) authenticated with x-api-key; find/enrich/verify contacts.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve key; consumption billing."
+  },
+  {
+    "id": 60,
+    "research_method": "kiro_web_search",
+    "description": "GTM data/enrichment platform with a public API and CLI.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "Workspace API keys (beta) created under Settings -> Account -> API keys.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "CLI"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Enrichment consumes credits; API is beta",
+    "evidence": [
+      {"url": "https://developers.clay.com/public-api/authentication", "source_title": "Clay Public API authentication", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "API keys are tied to a Clay user and workspace access.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.clay.com/quickstart", "source_title": "Clay API quickstart", "source_type": "official_dev_docs", "supports_fields": ["access_model"], "snippet": "Create an API key under Settings -> Account -> API keys (beta).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve keys (beta); credit-based enrichment."
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "app": "systeme.io",
+  "id": 37,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "systeme.io API documentation authentication",
+        "systeme.io developer API OAuth API key",
+        "systeme.io API pricing free trial developer access",
+        "systeme.io official MCP server model context protocol",
+        "systeme.io REST API GraphQL webhooks docs",
+        "systeme.io composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "https://systeme.io/dashboard/profile/public-api-settings"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 96,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

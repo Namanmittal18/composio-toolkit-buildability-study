@@ -1,0 +1,66 @@
+{
+  "app": "SendGrid",
+  "id": 40,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "SendGrid API documentation authentication",
+        "SendGrid developer API OAuth API key",
+        "SendGrid API pricing free trial developer access",
+        "SendGrid official MCP server model context protocol",
+        "SendGrid REST API GraphQL webhooks docs",
+        "SendGrid composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://www.twilio.com/docs/sendgrid/api-reference"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks",
+          "Other"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 92,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 1
+}

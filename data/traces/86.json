@@ -1,0 +1,64 @@
+{
+  "app": "QuickBooks",
+  "id": 86,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "QuickBooks API documentation authentication",
+        "QuickBooks developer API OAuth API key",
+        "QuickBooks API pricing free trial developer access",
+        "QuickBooks official MCP server model context protocol",
+        "QuickBooks REST API GraphQL webhooks docs",
+        "QuickBooks composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+        "https://github.com/intuit/quickbooks-online-mcp-server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 3,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 98,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

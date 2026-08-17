@@ -1,0 +1,66 @@
+{
+  "app": "DealCloud",
+  "id": 10,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "DealCloud API documentation authentication",
+        "DealCloud developer API OAuth API key",
+        "DealCloud API pricing free trial developer access",
+        "DealCloud official MCP server model context protocol",
+        "DealCloud REST API GraphQL webhooks docs",
+        "DealCloud composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/mcp/authentication"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "API Key"
+        ],
+        "access_model": "Enterprise-only",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -22,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 46,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 3
+}

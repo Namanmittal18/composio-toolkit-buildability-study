@@ -1,0 +1,64 @@
+{
+  "app": "Otter AI",
+  "id": 92,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Otter AI API documentation authentication",
+        "Otter AI developer API OAuth API key",
+        "Otter AI API pricing free trial developer access",
+        "Otter AI official MCP server model context protocol",
+        "Otter AI REST API GraphQL webhooks docs",
+        "Otter AI composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Enterprise-only",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -22,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 46,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

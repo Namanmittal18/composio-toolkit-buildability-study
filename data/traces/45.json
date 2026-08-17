@@ -1,0 +1,66 @@
+{
+  "app": "Magento (Adobe Commerce)",
+  "id": 45,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Magento (Adobe Commerce) API documentation authentication",
+        "Magento (Adobe Commerce) developer API OAuth API key",
+        "Magento (Adobe Commerce) API pricing free trial developer access",
+        "Magento (Adobe Commerce) official MCP server model context protocol",
+        "Magento (Adobe Commerce) REST API GraphQL webhooks docs",
+        "Magento (Adobe Commerce) composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.adobe.com/commerce/webapi/rest/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "GraphQL",
+          "SOAP"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 92,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 1
+}

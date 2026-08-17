@@ -1,0 +1,67 @@
+{
+  "app": "Snowflake",
+  "id": 67,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Snowflake API documentation authentication",
+        "Snowflake developer API OAuth API key",
+        "Snowflake API pricing free trial developer access",
+        "Snowflake official MCP server model context protocol",
+        "Snowflake REST API GraphQL webhooks docs",
+        "Snowflake composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+        "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "JWT",
+          "OAuth 2.0",
+          "Personal Access Token"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST",
+          "SDK"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 92,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

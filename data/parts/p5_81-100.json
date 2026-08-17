@@ -1,0 +1,398 @@
+[
+  {
+    "id": 81,
+    "research_method": "kiro_web_search",
+    "description": "Payments platform and APIs for online businesses (charges, subscriptions, payouts).",
+    "auth_methods": ["API Key", "Bearer Token", "OAuth 2.0"],
+    "auth_detail": "Secret/restricted API keys sent as Bearer; OAuth 2.0 for Stripe Connect platforms.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks", "SDK"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.stripe.com/mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "~100 read / 100 write req/s (default live).",
+    "main_blocker": "None (test mode immediate; live charges need business activation)",
+    "evidence": [
+      {"url": "https://docs.stripe.com/api", "source_title": "Stripe API Reference", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth", "auth_methods"], "snippet": "The Stripe API is organized around REST; authenticate with API keys as Bearer tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.stripe.com/keys", "source_title": "Stripe API keys", "source_type": "official_auth_docs", "supports_fields": ["access_model"], "snippet": "Sign up and immediately get test-mode API keys for free.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.stripe.com/mcp", "source_title": "Stripe MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Stripe MCP server provides tools AI agents use to interact with the Stripe API (mcp.stripe.com).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.95,
+    "notes": "Best-in-class self-serve developer experience; official remote MCP over OAuth."
+  },
+  {
+    "id": 82,
+    "research_method": "kiro_web_search",
+    "description": "Fintech API connecting apps to users' bank accounts (balances, transactions, auth).",
+    "auth_methods": ["API Key"],
+    "auth_detail": "client_id + secret per environment (sandbox/development/production).",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://plaid.com/docs/resources/mcp/",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-product rate limits.",
+    "main_blocker": "Live data requires Plaid production approval + paid plan",
+    "evidence": [
+      {"url": "https://plaid.com/docs/api/", "source_title": "Plaid API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Plaid REST API with client_id/secret; instant free Sandbox keys.", "retrieved_at": "2026-08-17"},
+      {"url": "https://plaid.com/docs/resources/mcp/", "source_title": "Plaid MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Dashboard MCP server is a remote MCP hosted by Plaid (production diagnostics/analytics).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Sandbox is instant/self-serve; production is approval-gated. Official MCP is diagnostics-focused, not the financial-data API."
+  },
+  {
+    "id": 83,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Cryptocurrency exchange with trading/market-data APIs.",
+    "auth_methods": ["API Key", "HMAC/signature"],
+    "auth_detail": "API key + secret with HMAC SHA256 request signing; some endpoints public.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Weight-based per-IP/key limits.",
+    "main_blocker": "Geographic/regulatory restrictions on account + trading",
+    "evidence": [
+      {"url": "https://developers.binance.com/docs/binance-spot-api-docs", "source_title": "Binance Spot API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "REST + WebSocket APIs; API key with HMAC signing.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve keys, but access/compliance varies by jurisdiction."
+  },
+  {
+    "id": 84,
+    "research_method": "kiro_web_search",
+    "description": "Japanese payment gateway (PSP); embeddable module for online payments.",
+    "auth_methods": ["API Key", "Other"],
+    "auth_detail": "Merchant credentials issued after contract; module-embed integration (Java/PHP/Perl/.NET/Ruby).",
+    "access_model": "Contact sales",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": true,
+    "api_type": ["REST", "SDK"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Per-merchant limits.",
+    "main_blocker": "Requires a merchant contract (contact sales / onboarding)",
+    "evidence": [
+      {"url": "https://www.paygent.co.jp/payment_service/connect/", "source_title": "Paygent Connect (payment integration)", "source_type": "official_support", "supports_fields": ["access_model", "api_type", "auth_methods"], "snippet": "Module-embed integration for multiple payment methods; SDKs across languages.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.55,
+    "notes": "PSP requiring merchant onboarding; documentation primarily Japanese. NMI-powered per assignment hint."
+  },
+  {
+    "id": 85,
+    "research_method": "kiro_web_search",
+    "description": "Payments product at ipayx.ai; API details not publicly verifiable from authoritative sources.",
+    "auth_methods": ["Unknown"],
+    "auth_detail": "Could not verify authentication from authoritative/official documentation. A generic third-party 'iPay API' article exists but is not clearly the same product.",
+    "access_model": "Unknown",
+    "credential_self_serve": null, "free_or_trial_access": null, "paid_plan_required": null, "admin_approval_required": null, "partner_or_contact_sales": null,
+    "api_type": ["Unknown"],
+    "api_breadth": "Unknown",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "poor", "sandbox_available": null, "rate_limits": "Unknown",
+    "main_blocker": "Insufficient public evidence to verify API/auth/access",
+    "evidence": [
+      {"url": "https://ipayx.ai/", "source_title": "iPayX", "source_type": "official_support", "supports_fields": [], "snippet": "Public/official developer documentation not verifiable during this research run.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.3,
+    "notes": "Honest Unknown: could not confirm the ipayx.ai/docs surface or authenticate the identity against a clearly matching authoritative source."
+  },
+  {
+    "id": 86,
+    "research_method": "kiro_web_search",
+    "description": "Accounting platform (QuickBooks Online) with an accounting API.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0; free developer account + sandbox company.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/intuit/quickbooks-online-mcp-server",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-realm throttle limits.",
+    "main_blocker": "Production app may require Intuit review for some scopes",
+    "evidence": [
+      {"url": "https://developer.intuit.com/app/developer/qbo/docs/get-started", "source_title": "QuickBooks Online API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "QBO REST API with OAuth 2.0; free developer account + sandbox.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/intuit/quickbooks-online-mcp-server", "source_title": "Intuit QuickBooks MCP", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "Official QuickBooks MCP server exposing QBO features as callable tools.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free dev account + sandbox self-serve; official MCP by Intuit."
+  },
+  {
+    "id": 87,
+    "research_method": "kiro_web_search",
+    "description": "Cloud accounting platform with a REST API.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0; free developer account to create apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://github.com/XeroAPI/xero-mcp-server",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-tenant + per-app daily limits.",
+    "main_blocker": "None (free developer account + demo company)",
+    "evidence": [
+      {"url": "https://developer.xero.com/documentation/api/accounting/overview", "source_title": "Xero Accounting API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Xero REST API with OAuth 2.0.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/XeroAPI/xero-mcp-server", "source_title": "Xero MCP server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "XeroAPI-published MCP server integrating the MCP protocol with Xero.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free dev account + demo company; first-party MCP under XeroAPI org."
+  },
+  {
+    "id": 88,
+    "research_method": "kiro_web_search",
+    "description": "Corporate cards / spend management with a developer API.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API tokens and OAuth 2.0; available to Brex customers.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developer.brex.com/docs/mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "Must be a Brex customer to obtain credentials",
+    "evidence": [
+      {"url": "https://developer.brex.com/", "source_title": "Brex Developer", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Brex REST API with tokens/OAuth for customers.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developer.brex.com/docs/mcp", "source_title": "Brex MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Brex MCP server lets AI assistants interact with your Brex account.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Customers self-serve tokens; official MCP."
+  },
+  {
+    "id": 89,
+    "research_method": "kiro_web_search",
+    "description": "Corporate cards / finance automation with a developer API.",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "OAuth 2.0 client-credentials; developer API for customers.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://builders.ramp.com/post/ramp-mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-client rate limits.",
+    "main_blocker": "Must be a Ramp customer to obtain credentials",
+    "evidence": [
+      {"url": "https://docs.ramp.com/developer-api/v1/overview", "source_title": "Ramp Developer API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Ramp REST API with OAuth client credentials.", "retrieved_at": "2026-08-17"},
+      {"url": "https://builders.ramp.com/post/ramp-mcp", "source_title": "Ramp MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Ramp built an MCP server exposing its developer API as a queryable interface.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Customers self-serve; official MCP."
+  },
+  {
+    "id": 90,
+    "research_method": "kiro_web_search",
+    "description": "Private capital markets data (companies, investors, deals, funds) with a REST API.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API keys issued under a PitchBook Direct Data contract (separate from platform login).",
+    "access_model": "Contact sales",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Per-contract limits.",
+    "main_blocker": "Requires a separate Direct Data enterprise contract",
+    "evidence": [
+      {"url": "https://pitchbook.com/help/PitchBook-api", "source_title": "PitchBook API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "The PitchBook API is a RESTful implementation.", "retrieved_at": "2026-08-17"},
+      {"url": "https://pitchbook.com/products/direct-access-data", "source_title": "PitchBook Direct Data", "source_type": "official_support", "supports_fields": ["access_model", "partner_or_contact_sales"], "snippet": "API belongs to Direct Data and requires its own contract; platform access is not API entitlement.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "REST API exists but is gated behind a separate enterprise Direct Data contract."
+  },
+  {
+    "id": 91,
+    "research_method": "kiro_web_search",
+    "description": "AI research/notebook tool; a programmatic API exists only via NotebookLM Enterprise on Google Cloud.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "Google Cloud auth (OAuth/service accounts) for the NotebookLM Enterprise (Gemini Enterprise) API. The consumer NotebookLM has no public API.",
+    "access_model": "Enterprise-only",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Narrow",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "GCP quota based.",
+    "main_blocker": "Consumer product has no API; only NotebookLM Enterprise via Google Cloud",
+    "evidence": [
+      {"url": "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks", "source_title": "NotebookLM Enterprise API (Google Cloud)", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Create and manage notebooks via the NotebookLM Enterprise API on Google Cloud.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Important distinction: only the Enterprise (Google Cloud) variant is API-accessible; the popular consumer app is not."
+  },
+  {
+    "id": 92,
+    "research_method": "kiro_web_search",
+    "description": "AI meeting transcription/notes; public API for Enterprise plus an official MCP server.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API keys for Enterprise workspaces (enabled via account manager). MCP uses secure connection to your Otter data.",
+    "access_model": "Enterprise-only",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": true, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-workspace limits.",
+    "main_blocker": "Public API gated to Enterprise (contact account manager)",
+    "evidence": [
+      {"url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API", "source_title": "Otter.ai Public API", "source_type": "official_support", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Otter's Public API is available for all Enterprise workspaces; contact your account manager.", "retrieved_at": "2026-08-17"},
+      {"url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server", "source_title": "Otter MCP Server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Connect AI models to Otter using the Model Context Protocol.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Official MCP exists, but the REST API is Enterprise-gated."
+  },
+  {
+    "id": 93,
+    "research_method": "kiro_web_search",
+    "description": "AI meeting notetaker with a public API included on all plans.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API keys generated in User Settings -> API Access; webhooks supported.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks", "SDK"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "~60 calls / 60s.",
+    "main_blocker": "None (API keys included on all plans, incl. free)",
+    "evidence": [
+      {"url": "https://developers.fathom.ai/quickstart", "source_title": "Fathom API quickstart", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Generate an API key in User Settings -> API Access.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.fathom.ai/faq", "source_title": "Fathom API FAQ", "source_type": "official_support", "supports_fields": ["access_model"], "snippet": "API access (keys and webhooks) are included on all plans.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve keys on all plans; MCP not found."
+  },
+  {
+    "id": 94,
+    "research_method": "kiro_web_search",
+    "description": "AI research search engine over 220M+ papers, with an API and official MCP.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key authentication; documented reference endpoints.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://consensus.app/home/mcp/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Paid API tier for production use",
+    "evidence": [
+      {"url": "https://docs.consensus.app/reference/v1_quick_search", "source_title": "Consensus API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Query for relevant papers via the Consensus API.", "retrieved_at": "2026-08-17"},
+      {"url": "https://consensus.app/home/mcp/", "source_title": "Consensus MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status", "access_model"], "snippet": "Connect your AI tool directly to 220M+ peer-reviewed papers via MCP.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "API + official MCP; production access is paid."
+  },
+  {
+    "id": 95,
+    "research_method": "kiro_web_search",
+    "description": "Agentic document parsing/extraction platform (PDFs, tables) with a REST API.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key created at studio.reducto.ai; SDKs for Python/JS.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "SDK"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Credit-based usage.",
+    "main_blocker": "Credit-based/paid usage (enterprise SLAs for scale)",
+    "evidence": [
+      {"url": "https://docs.reducto.ai/parse/overview", "source_title": "Reducto Parse API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "REST API converting documents into structured JSON.", "retrieved_at": "2026-08-17"},
+      {"url": "https://reducto.ai/developers", "source_title": "Reducto developers", "source_type": "official_dev_docs", "supports_fields": ["access_model"], "snippet": "Sign up at studio.reducto.ai and create an API key.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Self-serve keys via studio; credit-based billing. MCP not found."
+  },
+  {
+    "id": 96,
+    "research_method": "kiro_web_search",
+    "description": "Autonomous AI software engineer with an API and official MCP server.",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "Principal + token model (API tokens as Bearer).",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": false, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "Paid product to obtain credentials",
+    "evidence": [
+      {"url": "https://docs.devin.ai/api-reference/authentication", "source_title": "Devin API authentication", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "The Devin API uses a principal + token model.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.devin.ai/work-with-devin/devin-mcp", "source_title": "Devin MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status", "access_model"], "snippet": "The Devin MCP server is an authenticated service with platform management capabilities.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Paid product; self-serve tokens once subscribed; official MCP."
+  },
+  {
+    "id": 97,
+    "research_method": "kiro_web_search",
+    "description": "Generative media (image/video) platform exposing a hosted API, a CLI, and an MCP server.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API keys for the model API; CLI and MCP wrap the same platform.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "CLI", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://higgsfield.ai/mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Credit-based usage.",
+    "main_blocker": "Credit-based/paid generation",
+    "evidence": [
+      {"url": "https://docs.higgsfield.ai/docs", "source_title": "Higgsfield API Docs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "One integration point for generative media models; submit to an endpoint, poll or receive a webhook.", "retrieved_at": "2026-08-17"},
+      {"url": "https://higgsfield.ai/mcp", "source_title": "Higgsfield MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status", "access_model"], "snippet": "AI image & video generation for any agent via MCP (Claude connectors).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "The assignment hint framed it as a CLI, but Higgsfield actually offers a hosted API + official MCP as well."
+  },
+  {
+    "id": 98,
+    "research_method": "kiro_web_search",
+    "description": "Command-line tool (mmdc) that renders Mermaid diagram definitions to SVG/PNG/PDF.",
+    "auth_methods": ["None"],
+    "auth_detail": "No authentication; installed via npm (@mermaid-js/mermaid-cli) and run locally with headless Chromium.",
+    "access_model": "No public API",
+    "credential_self_serve": null, "free_or_trial_access": null, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["CLI"],
+    "api_breadth": "Not applicable",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": null, "rate_limits": "Not applicable (local tool).",
+    "main_blocker": "Product is a local CLI/library, not a hosted callable API",
+    "evidence": [
+      {"url": "https://github.com/mermaid-js/mermaid-cli", "source_title": "mermaid-js/mermaid-cli", "source_type": "official_repo", "supports_fields": ["api_type", "access_model", "auth_methods"], "snippet": "A CLI (mmdc) for mermaid: takes a mermaid definition file and generates an svg/png/pdf.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Trap app: an npm package/CLI, not a hosted API. Community Mermaid MCP servers exist but are not this project."
+  },
+  {
+    "id": 99,
+    "research_method": "kiro_web_search",
+    "description": "Third-party managed REST API (TranscriptAPI) for YouTube transcripts, search, channels, and playlists.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "API key authentication; free tier grants 100 credits, paid plans from ~$5/mo.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://transcriptapi.com/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Credit/plan based.",
+    "main_blocker": "Third-party dependency and ToS risk relative to YouTube",
+    "evidence": [
+      {"url": "https://transcriptapi.com/docs/llms-full.txt", "source_title": "TranscriptAPI documentation", "source_type": "official_api_docs", "supports_fields": ["api_type", "auth_methods", "api_breadth"], "snippet": "REST API to extract transcripts; covers authentication, parameters, and response formats.", "retrieved_at": "2026-08-17"},
+      {"url": "https://transcriptapi.com/", "source_title": "TranscriptAPI home", "source_type": "official_dev_docs", "supports_fields": ["access_model", "mcp_status"], "snippet": "Get transcripts, search, channels, playlists via REST API or YouTube MCP.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Researched as the supplied vendor (transcriptapi.com), NOT YouTube's official API. Self-serve wrapper with its own key and MCP."
+  },
+  {
+    "id": 100,
+    "research_method": "kiro_web_search",
+    "description": "AI meeting recorder/notetaker with an OAuth API and MCP.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0 Authorization Code + PKCE; register a client with redirect URI.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://grain.com/release-note/grain-mcp-and-api-updates",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-client rate limits.",
+    "main_blocker": "API/MCP capabilities tied to paid plans",
+    "evidence": [
+      {"url": "https://developers.grain.com/", "source_title": "Grain API (developers)", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "OAuth2 Authorization Code flow with PKCE; register a client with a redirect URI.", "retrieved_at": "2026-08-17"},
+      {"url": "https://grain.com/release-note/grain-mcp-and-api-updates", "source_title": "Grain MCP & API updates", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Grain ships MCP + API updates that pull meeting context into AI tools.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Self-serve OAuth client; MCP + API delivered to Claude/ChatGPT. Advanced features tied to paid plans."
+  }
+]

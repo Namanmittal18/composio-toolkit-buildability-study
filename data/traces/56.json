@@ -1,0 +1,66 @@
+{
+  "app": "Firecrawl",
+  "id": 56,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Firecrawl API documentation authentication",
+        "Firecrawl developer API OAuth API key",
+        "Firecrawl API pricing free trial developer access",
+        "Firecrawl official MCP server model context protocol",
+        "Firecrawl REST API GraphQL webhooks docs",
+        "Firecrawl composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.firecrawl.dev/api-reference/introduction",
+        "https://github.com/firecrawl/firecrawl-mcp-server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "SDK"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 98,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

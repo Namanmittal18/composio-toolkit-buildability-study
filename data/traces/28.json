@@ -1,0 +1,66 @@
+{
+  "app": "WhatsApp Business",
+  "id": 28,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "WhatsApp Business API documentation authentication",
+        "WhatsApp Business developer API OAuth API key",
+        "WhatsApp Business API pricing free trial developer access",
+        "WhatsApp Business official MCP server model context protocol",
+        "WhatsApp Business REST API GraphQL webhooks docs",
+        "WhatsApp Business composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.facebook.com/docs/whatsapp/cloud-api",
+        "https://developers.facebook.com/docs/development/release/business-verification"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "Bearer Token"
+        ],
+        "access_model": "Admin approval",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -10,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 49,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

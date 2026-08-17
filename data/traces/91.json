@@ -1,0 +1,63 @@
+{
+  "app": "NotebookLM",
+  "id": 91,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "NotebookLM API documentation authentication",
+        "NotebookLM developer API OAuth API key",
+        "NotebookLM API pricing free trial developer access",
+        "NotebookLM official MCP server model context protocol",
+        "NotebookLM REST API GraphQL webhooks docs",
+        "NotebookLM composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Enterprise-only",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Narrow",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -22,
+        "api_type": 8,
+        "api_breadth": 0,
+        "auth_methods": 3,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 29,
+      "label": "Not currently feasible"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 1
+}

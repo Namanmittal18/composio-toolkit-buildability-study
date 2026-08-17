@@ -1,0 +1,66 @@
+{
+  "app": "Freshdesk",
+  "id": 13,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Freshdesk API documentation authentication",
+        "Freshdesk developer API OAuth API key",
+        "Freshdesk API pricing free trial developer access",
+        "Freshdesk official MCP server model context protocol",
+        "Freshdesk REST API GraphQL webhooks docs",
+        "Freshdesk composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.freshdesk.com/api/",
+        "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Basic Auth"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 92,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

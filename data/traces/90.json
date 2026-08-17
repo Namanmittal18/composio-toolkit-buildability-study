@@ -1,0 +1,64 @@
+{
+  "app": "PitchBook",
+  "id": 90,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "PitchBook API documentation authentication",
+        "PitchBook developer API OAuth API key",
+        "PitchBook API pricing free trial developer access",
+        "PitchBook official MCP server model context protocol",
+        "PitchBook REST API GraphQL webhooks docs",
+        "PitchBook composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://pitchbook.com/help/PitchBook-api",
+        "https://pitchbook.com/products/direct-access-data"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Contact sales",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -20,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 37,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

@@ -1,0 +1,67 @@
+{
+  "app": "Plain",
+  "id": 17,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Plain API documentation authentication",
+        "Plain developer API OAuth API key",
+        "Plain API pricing free trial developer access",
+        "Plain official MCP server model context protocol",
+        "Plain REST API GraphQL webhooks docs",
+        "Plain composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://www.plain.com/docs/graphql/introduction",
+        "https://help.plain.com/article/api-quickstart"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "GraphQL",
+          "Webhooks",
+          "SDK"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 70,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

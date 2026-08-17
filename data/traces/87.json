@@ -1,0 +1,65 @@
+{
+  "app": "Xero",
+  "id": 87,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Xero API documentation authentication",
+        "Xero developer API OAuth API key",
+        "Xero API pricing free trial developer access",
+        "Xero official MCP server model context protocol",
+        "Xero REST API GraphQL webhooks docs",
+        "Xero composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.xero.com/documentation/api/accounting/overview",
+        "https://github.com/XeroAPI/xero-mcp-server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 4,
+        "auth_methods": 3,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 98,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

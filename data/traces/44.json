@@ -1,0 +1,64 @@
+{
+  "app": "Salesforce Commerce Cloud",
+  "id": 44,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Salesforce Commerce Cloud API documentation authentication",
+        "Salesforce Commerce Cloud developer API OAuth API key",
+        "Salesforce Commerce Cloud API pricing free trial developer access",
+        "Salesforce Commerce Cloud official MCP server model context protocol",
+        "Salesforce Commerce Cloud REST API GraphQL webhooks docs",
+        "Salesforce Commerce Cloud composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+        "https://www.salesforce.com/products/commerce/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Enterprise-only",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -22,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 3,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 33,
+      "label": "Not currently feasible"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

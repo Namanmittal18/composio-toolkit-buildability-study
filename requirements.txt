@@ -1,0 +1,12 @@
+# The pipeline's deterministic stages (schema validation, buildability scoring,
+# finalize, analytics, accuracy, site build) use only the Python 3 standard
+# library — no third-party packages required to reproduce the dataset, scoring,
+# analytics, and site.
+#
+# The optional LLM+search extraction stage (scripts/run_research.py) also uses
+# only urllib from the stdlib for HTTP, so it has no hard third-party deps either.
+#
+# Optional, only if you enable Composio corroboration (pipeline/verification/corroborate.py):
+# composio>=0.7.0
+#
+# Requires: Python 3.10+

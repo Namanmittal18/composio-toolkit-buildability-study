@@ -1,0 +1,64 @@
+{
+  "app": "YouTube Transcript",
+  "id": 99,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "YouTube Transcript API documentation authentication",
+        "YouTube Transcript developer API OAuth API key",
+        "YouTube Transcript API pricing free trial developer access",
+        "YouTube Transcript official MCP server model context protocol",
+        "YouTube Transcript REST API GraphQL webhooks docs",
+        "YouTube Transcript composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://transcriptapi.com/docs/llms-full.txt",
+        "https://transcriptapi.com/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 96,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.8,
+  "evidence_count": 2
+}

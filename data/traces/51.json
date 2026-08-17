@@ -1,0 +1,64 @@
+{
+  "app": "DataForSEO",
+  "id": 51,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "DataForSEO API documentation authentication",
+        "DataForSEO developer API OAuth API key",
+        "DataForSEO API pricing free trial developer access",
+        "DataForSEO official MCP server model context protocol",
+        "DataForSEO REST API GraphQL webhooks docs",
+        "DataForSEO composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.dataforseo.com/v3/"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Basic Auth",
+          "API Key"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Unknown"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 70,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 1
+}

@@ -1,0 +1,66 @@
+{
+  "app": "higgsfield",
+  "id": 97,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "higgsfield API documentation authentication",
+        "higgsfield developer API OAuth API key",
+        "higgsfield API pricing free trial developer access",
+        "higgsfield official MCP server model context protocol",
+        "higgsfield REST API GraphQL webhooks docs",
+        "higgsfield composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://docs.higgsfield.ai/docs",
+        "https://higgsfield.ai/mcp"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "CLI",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 80,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

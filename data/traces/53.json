@@ -1,0 +1,67 @@
+{
+  "app": "Ahrefs",
+  "id": 53,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Ahrefs API documentation authentication",
+        "Ahrefs developer API OAuth API key",
+        "Ahrefs API pricing free trial developer access",
+        "Ahrefs official MCP server model context protocol",
+        "Ahrefs REST API GraphQL webhooks docs",
+        "Ahrefs composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+        "https://docs.ahrefs.com/api/docs/api-keys-creation-and-management",
+        "https://docs.ahrefs.com/en/mcp/docs/introduction"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key",
+          "Bearer Token",
+          "OAuth 2.0"
+        ],
+        "access_model": "Enterprise-only",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -22,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 44,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 3
+}

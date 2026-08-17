@@ -1,0 +1,66 @@
+{
+  "app": "Twilio",
+  "id": 22,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Twilio API documentation authentication",
+        "Twilio developer API OAuth API key",
+        "Twilio API pricing free trial developer access",
+        "Twilio official MCP server model context protocol",
+        "Twilio REST API GraphQL webhooks docs",
+        "Twilio composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://www.twilio.com/docs/usage/api",
+        "https://www.twilio.com/docs/ai/mcp"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Basic Auth",
+          "API Key"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 10,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 96,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 2
+}

@@ -1,0 +1,67 @@
+{
+  "app": "Neo4j",
+  "id": 66,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Neo4j API documentation authentication",
+        "Neo4j developer API OAuth API key",
+        "Neo4j API pricing free trial developer access",
+        "Neo4j official MCP server model context protocol",
+        "Neo4j REST API GraphQL webhooks docs",
+        "Neo4j composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://neo4j.com/docs/query-api/current/",
+        "https://github.com/neo4j-contrib/mcp-neo4j"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Basic Auth",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Other",
+          "GraphQL"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Community"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 3,
+        "doc_quality": 3
+      },
+      "score": 91,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

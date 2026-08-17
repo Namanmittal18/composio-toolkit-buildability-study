@@ -1,0 +1,65 @@
+{
+  "app": "Zoho Cliq",
+  "id": 23,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Zoho Cliq API documentation authentication",
+        "Zoho Cliq developer API OAuth API key",
+        "Zoho Cliq API pricing free trial developer access",
+        "Zoho Cliq official MCP server model context protocol",
+        "Zoho Cliq REST API GraphQL webhooks docs",
+        "Zoho Cliq composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://www.zoho.com/cliq/help/restapi/",
+        "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 3,
+        "mcp_status": 10,
+        "doc_quality": 0
+      },
+      "score": 95,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 2
+}

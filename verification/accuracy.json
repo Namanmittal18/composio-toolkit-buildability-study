@@ -1,0 +1,342 @@
+{
+  "overall": {
+    "pass": null,
+    "total_claims": 396,
+    "correct_claims": 388,
+    "incorrect_claims": 8,
+    "accuracy_pct": 98.0,
+    "accuracy_by_field": {
+      "access_model": {
+        "n": 66,
+        "pct": 100.0
+      },
+      "api_breadth": {
+        "n": 66,
+        "pct": 100.0
+      },
+      "api_type": {
+        "n": 66,
+        "pct": 100.0
+      },
+      "auth_methods": {
+        "n": 66,
+        "pct": 100.0
+      },
+      "buildability": {
+        "n": 66,
+        "pct": 100.0
+      },
+      "mcp_status": {
+        "n": 66,
+        "pct": 87.9
+      }
+    },
+    "accuracy_by_category": {
+      "AI, Research and Media-native": {
+        "n": 72,
+        "pct": 100.0
+      },
+      "CRM and Sales": {
+        "n": 48,
+        "pct": 95.8
+      },
+      "Communications and Messaging": {
+        "n": 48,
+        "pct": 97.9
+      },
+      "Data, SEO and Scraping": {
+        "n": 24,
+        "pct": 100.0
+      },
+      "Developer, Infra and Data Platforms": {
+        "n": 24,
+        "pct": 95.8
+      },
+      "Ecommerce": {
+        "n": 60,
+        "pct": 100.0
+      },
+      "Finance and Fintech": {
+        "n": 48,
+        "pct": 100.0
+      },
+      "Marketing, Ads, Email and Social": {
+        "n": 12,
+        "pct": 100.0
+      },
+      "Productivity and Project Management": {
+        "n": 24,
+        "pct": 95.8
+      },
+      "Support and Helpdesk": {
+        "n": 36,
+        "pct": 91.7
+      }
+    },
+    "error_type_counts": {
+      "MCP false negative": 8
+    },
+    "apps_sampled": [
+      "Ahrefs",
+      "Amazon Selling Partner",
+      "Attio",
+      "DealCloud",
+      "Fathom",
+      "Freshdesk",
+      "Front",
+      "GitHub",
+      "Gorgias",
+      "Grain",
+      "HubSpot",
+      "Klaviyo",
+      "Mermaid CLI",
+      "NotebookLM",
+      "Notion",
+      "Otter AI",
+      "Paygent Connect",
+      "PitchBook",
+      "Salesforce Commerce Cloud",
+      "Sherlock",
+      "Shopify",
+      "Slack",
+      "Smartsheet",
+      "Snowflake",
+      "Squarespace",
+      "Stripe",
+      "Telegram",
+      "Twilio",
+      "Zoho CRM",
+      "Zoho Cliq",
+      "fanbasis",
+      "higgsfield",
+      "iPayX"
+    ],
+    "num_apps_sampled": 33
+  },
+  "pass_1": {
+    "pass": 1,
+    "total_claims": 198,
+    "correct_claims": 190,
+    "incorrect_claims": 8,
+    "accuracy_pct": 96.0,
+    "accuracy_by_field": {
+      "access_model": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "api_breadth": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "api_type": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "auth_methods": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "buildability": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "mcp_status": {
+        "n": 33,
+        "pct": 75.8
+      }
+    },
+    "accuracy_by_category": {
+      "AI, Research and Media-native": {
+        "n": 36,
+        "pct": 100.0
+      },
+      "CRM and Sales": {
+        "n": 24,
+        "pct": 91.7
+      },
+      "Communications and Messaging": {
+        "n": 24,
+        "pct": 95.8
+      },
+      "Data, SEO and Scraping": {
+        "n": 12,
+        "pct": 100.0
+      },
+      "Developer, Infra and Data Platforms": {
+        "n": 12,
+        "pct": 91.7
+      },
+      "Ecommerce": {
+        "n": 30,
+        "pct": 100.0
+      },
+      "Finance and Fintech": {
+        "n": 24,
+        "pct": 100.0
+      },
+      "Marketing, Ads, Email and Social": {
+        "n": 6,
+        "pct": 100.0
+      },
+      "Productivity and Project Management": {
+        "n": 12,
+        "pct": 91.7
+      },
+      "Support and Helpdesk": {
+        "n": 18,
+        "pct": 83.3
+      }
+    },
+    "error_type_counts": {
+      "MCP false negative": 8
+    },
+    "apps_sampled": [
+      "Ahrefs",
+      "Amazon Selling Partner",
+      "Attio",
+      "DealCloud",
+      "Fathom",
+      "Freshdesk",
+      "Front",
+      "GitHub",
+      "Gorgias",
+      "Grain",
+      "HubSpot",
+      "Klaviyo",
+      "Mermaid CLI",
+      "NotebookLM",
+      "Notion",
+      "Otter AI",
+      "Paygent Connect",
+      "PitchBook",
+      "Salesforce Commerce Cloud",
+      "Sherlock",
+      "Shopify",
+      "Slack",
+      "Smartsheet",
+      "Snowflake",
+      "Squarespace",
+      "Stripe",
+      "Telegram",
+      "Twilio",
+      "Zoho CRM",
+      "Zoho Cliq",
+      "fanbasis",
+      "higgsfield",
+      "iPayX"
+    ],
+    "num_apps_sampled": 33
+  },
+  "pass_2": {
+    "pass": 2,
+    "total_claims": 198,
+    "correct_claims": 198,
+    "incorrect_claims": 0,
+    "accuracy_pct": 100.0,
+    "accuracy_by_field": {
+      "access_model": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "api_breadth": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "api_type": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "auth_methods": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "buildability": {
+        "n": 33,
+        "pct": 100.0
+      },
+      "mcp_status": {
+        "n": 33,
+        "pct": 100.0
+      }
+    },
+    "accuracy_by_category": {
+      "AI, Research and Media-native": {
+        "n": 36,
+        "pct": 100.0
+      },
+      "CRM and Sales": {
+        "n": 24,
+        "pct": 100.0
+      },
+      "Communications and Messaging": {
+        "n": 24,
+        "pct": 100.0
+      },
+      "Data, SEO and Scraping": {
+        "n": 12,
+        "pct": 100.0
+      },
+      "Developer, Infra and Data Platforms": {
+        "n": 12,
+        "pct": 100.0
+      },
+      "Ecommerce": {
+        "n": 30,
+        "pct": 100.0
+      },
+      "Finance and Fintech": {
+        "n": 24,
+        "pct": 100.0
+      },
+      "Marketing, Ads, Email and Social": {
+        "n": 6,
+        "pct": 100.0
+      },
+      "Productivity and Project Management": {
+        "n": 12,
+        "pct": 100.0
+      },
+      "Support and Helpdesk": {
+        "n": 18,
+        "pct": 100.0
+      }
+    },
+    "error_type_counts": {},
+    "apps_sampled": [
+      "Ahrefs",
+      "Amazon Selling Partner",
+      "Attio",
+      "DealCloud",
+      "Fathom",
+      "Freshdesk",
+      "Front",
+      "GitHub",
+      "Gorgias",
+      "Grain",
+      "HubSpot",
+      "Klaviyo",
+      "Mermaid CLI",
+      "NotebookLM",
+      "Notion",
+      "Otter AI",
+      "Paygent Connect",
+      "PitchBook",
+      "Salesforce Commerce Cloud",
+      "Sherlock",
+      "Shopify",
+      "Slack",
+      "Smartsheet",
+      "Snowflake",
+      "Squarespace",
+      "Stripe",
+      "Telegram",
+      "Twilio",
+      "Zoho CRM",
+      "Zoho Cliq",
+      "fanbasis",
+      "higgsfield",
+      "iPayX"
+    ],
+    "num_apps_sampled": 33
+  }
+}

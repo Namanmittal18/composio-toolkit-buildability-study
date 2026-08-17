@@ -1,0 +1,64 @@
+{
+  "app": "Zoho CRM",
+  "id": 7,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Zoho CRM API documentation authentication",
+        "Zoho CRM developer API OAuth API key",
+        "Zoho CRM API pricing free trial developer access",
+        "Zoho CRM official MCP server model context protocol",
+        "Zoho CRM REST API GraphQL webhooks docs",
+        "Zoho CRM composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://www.zoho.com/crm/developer/docs/api/v6/",
+        "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 8,
+        "api_breadth": 4,
+        "auth_methods": 3,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 98,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "app": "Attio",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://docs.attio.com/mcp/overview",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  },
+  {
+    "app": "Zoho CRM",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  },
+  {
+    "app": "Freshdesk",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "First-party documented",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://crmsupport.freshworks.com/support/solutions/articles/50000012670-model-context-protocol-mcp-integration-in-freshdesk-eap-",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to First-party documented"
+  },
+  {
+    "app": "Front",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://dev.frontapp.com/docs/mcp-server",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  },
+  {
+    "app": "Gorgias",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Community",
+    "correct": false,
+    "verification_method": "independent second-pass search",
+    "evidence_url": "https://github.com/mattcoatsworth/Gorgias-MCP-Server",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Community"
+  },
+  {
+    "app": "Zoho Cliq",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  },
+  {
+    "app": "Snowflake",
+    "field": "mcp_status",
+    "agent_answer": "Unknown",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  },
+  {
+    "app": "Smartsheet",
+    "field": "mcp_status",
+    "agent_answer": "None found",
+    "verified_answer": "Official",
+    "correct": false,
+    "verification_method": "independent second-pass search + official docs",
+    "evidence_url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+    "error_type": "MCP false negative",
+    "correction": "Set mcp_status to Official"
+  }
+]

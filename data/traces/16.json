@@ -1,0 +1,63 @@
+{
+  "app": "LiveAgent",
+  "id": 16,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "LiveAgent API documentation authentication",
+        "LiveAgent developer API OAuth API key",
+        "LiveAgent API pricing free trial developer access",
+        "LiveAgent official MCP server model context protocol",
+        "LiveAgent REST API GraphQL webhooks docs",
+        "LiveAgent composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://support.liveagent.com/802463-REST-API"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "API Key"
+        ],
+        "access_model": "Self-serve trial",
+        "api_type": [
+          "REST"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 22,
+        "api_type": 8,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 77,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.65,
+  "evidence_count": 1
+}

@@ -1,0 +1,396 @@
+[
+  {
+    "id": 21,
+    "research_method": "kiro_web_search",
+    "description": "Team messaging and collaboration platform with an extensive app/bot platform.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "OAuth 2.0 issuing bot/user tokens (xoxb/xoxp) used as Bearer tokens.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.slack.dev/ai/slack-mcp-server/",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Tiered per-method rate limits.",
+    "main_blocker": "Workspace admin may need to approve app installation",
+    "evidence": [
+      {"url": "https://docs.slack.dev/authentication/", "source_title": "Slack authentication", "source_type": "official_auth_docs", "supports_fields": ["auth_methods", "access_model"], "snippet": "Slack apps use OAuth 2.0 to obtain bot and user tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.slack.dev/apis/web-api/", "source_title": "Slack Web API", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth"], "snippet": "The Web API exposes 200+ HTTP methods.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.slack.dev/ai/slack-mcp-server/", "source_title": "Slack MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "MCP server giving AI agents a secure way to use Slack.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "App creation is free; workspace install may require admin approval."
+  },
+  {
+    "id": 22,
+    "research_method": "kiro_web_search",
+    "description": "Communications platform-as-a-service (SMS, voice, email, verification).",
+    "auth_methods": ["Basic Auth", "API Key"],
+    "auth_detail": "Account SID + Auth Token via HTTP Basic; scoped API Keys also supported.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://www.twilio.com/docs/ai/mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-product concurrency/rate limits.",
+    "main_blocker": "Pay-as-you-go beyond trial credit",
+    "evidence": [
+      {"url": "https://www.twilio.com/docs/usage/api", "source_title": "Twilio REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Authenticate with Account SID and Auth Token; broad REST API across products.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.twilio.com/docs/ai/mcp", "source_title": "Twilio MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Twilio MCP server gives AI agents access to Twilio's full API surface (1,800+ endpoints).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free trial credit; self-serve keys; huge API surface."
+  },
+  {
+    "id": 23,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Team messaging app within the Zoho suite.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0; bot tokens/webhooks for integrations.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Per-org limits.",
+    "main_blocker": "None major (limited API surface)",
+    "evidence": [
+      {"url": "https://www.zoho.com/cliq/help/restapi/", "source_title": "Zoho Cliq REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Zoho Cliq REST API with OAuth 2.0 and bot/webhook integrations.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Free tier; OAuth self-serve. MCP not found."
+  },
+  {
+    "id": 24,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Collaboration suite (messaging, docs, calendar) — Lark/Feishu international.",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "App/tenant access tokens obtained via app credentials; user OAuth for user context.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-app frequency limits.",
+    "main_blocker": "App/tenant token model complexity",
+    "evidence": [
+      {"url": "https://open.larksuite.com/document/home/index", "source_title": "Lark Open Platform", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Lark Open Platform APIs use app/tenant access tokens and user OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Self-serve app creation; broad API. MCP not found."
+  },
+  {
+    "id": 25,
+    "research_method": "kiro_web_search",
+    "description": "Free team messaging app (CAKE.com) with a public integrations API.",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "API addon issues an API key; requires token + x-app-token headers. OAuth2 for apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "1000 requests/min per user.",
+    "main_blocker": "Must install the API addon first",
+    "evidence": [
+      {"url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/", "source_title": "Pumble API Overview", "source_type": "official_support", "supports_fields": ["auth_methods", "access_model", "api_type"], "snippet": "Install the API addon, generate an API key; send messages, reactions and more via HTTP.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.pumble.com/", "source_title": "Pumble API reference", "source_type": "official_api_docs", "supports_fields": ["api_breadth"], "snippet": "Endpoints prefixed with api-ga.pumble.com/v1; token and x-app-token headers required.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Free product; public API via addon."
+  },
+  {
+    "id": 26,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Voice/text community platform popular with gaming and communities.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "Bot tokens and OAuth 2.0; Gateway (WebSocket) for realtime.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "Community", "mcp_type": "Community", "mcp_evidence_url": "https://github.com/v-3/discordmcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Global + per-route rate limits.",
+    "main_blocker": "None (bot verification needed at scale >100 servers)",
+    "evidence": [
+      {"url": "https://discord.com/developers/docs/reference", "source_title": "Discord API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Discord REST API + Gateway; bot tokens and OAuth2.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/v-3/discordmcp", "source_title": "Community Discord MCP", "source_type": "secondary_docs", "supports_fields": ["mcp_status"], "snippet": "Community MCP server for Discord.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free self-serve bot tokens; only community MCP servers exist."
+  },
+  {
+    "id": 27,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Messaging app; Bot API and MTProto client API for developers.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "Bot token from @BotFather (Bot API); api_id/api_hash for MTProto.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "Community", "mcp_type": "Community", "mcp_evidence_url": "https://github.com/chigwell/telegram-mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-bot message rate limits.",
+    "main_blocker": "None (free self-serve bot token)",
+    "evidence": [
+      {"url": "https://core.telegram.org/bots/api", "source_title": "Telegram Bot API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Bot API accessed via a token issued by BotFather.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/chigwell/telegram-mcp", "source_title": "Community Telegram MCP", "source_type": "secondary_docs", "supports_fields": ["mcp_status"], "snippet": "Community MCP server for Telegram.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Bot tokens are free and instant; community MCP only."
+  },
+  {
+    "id": 28,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "WhatsApp Business Platform (Cloud API) for business messaging via Meta.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "Meta system-user/access tokens (Bearer) via a Meta app; Graph API.",
+    "access_model": "Admin approval",
+    "credential_self_serve": false, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Messaging tier + quality-based limits.",
+    "main_blocker": "Meta app + Business verification + phone number registration",
+    "evidence": [
+      {"url": "https://developers.facebook.com/docs/whatsapp/cloud-api", "source_title": "WhatsApp Cloud API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Cloud API over Graph; access tokens via a Meta app.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.facebook.com/docs/development/release/business-verification", "source_title": "Meta Business verification", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "Business verification required to unlock production messaging.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Sandbox/test number available, but production requires business verification."
+  },
+  {
+    "id": 29,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Cloud phone system for support and sales teams.",
+    "auth_methods": ["Basic Auth", "API Key", "OAuth 2.0"],
+    "auth_detail": "API ID/token (Basic) and OAuth 2.0 for public integrations.",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key rate limits.",
+    "main_blocker": "Paid plan required",
+    "evidence": [
+      {"url": "https://developer.aircall.io/api-references/", "source_title": "Aircall API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Aircall REST API with Basic auth and OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Self-serve keys for paying customers."
+  },
+  {
+    "id": 30,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Communications APIs (SMS, voice, video, verify) — Vonage/Nexmo.",
+    "auth_methods": ["API Key", "JWT"],
+    "auth_detail": "API key + secret for most APIs; JWT for Voice/Applications.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-product limits.",
+    "main_blocker": "Pay-as-you-go beyond trial credit",
+    "evidence": [
+      {"url": "https://developer.vonage.com/en/api", "source_title": "Vonage API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Vonage APIs use API key/secret and JWT.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Free trial credit; self-serve keys."
+  },
+  {
+    "id": 31,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Programmatic management of Google Ads campaigns and reporting.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0 plus a Google Ads developer token (approval required).",
+    "access_model": "Admin approval",
+    "credential_self_serve": false, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Other"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-developer-token operation limits.",
+    "main_blocker": "Developer token approval + OAuth setup",
+    "evidence": [
+      {"url": "https://developers.google.com/google-ads/api/docs/get-started/introduction", "source_title": "Google Ads API intro", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "REST and gRPC access; requires OAuth and a developer token.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.google.com/google-ads/api/docs/access-levels", "source_title": "Google Ads developer token access", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "Developer tokens start with test access and require approval for standard access.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Test access self-serve; production needs token approval."
+  },
+  {
+    "id": 32,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Meta Marketing API for managing Facebook/Instagram ad campaigns.",
+    "auth_methods": ["OAuth 2.0", "Bearer Token"],
+    "auth_detail": "OAuth 2.0 / system-user tokens via a Meta app; ads_management permission requires review.",
+    "access_model": "Admin approval",
+    "credential_self_serve": false, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Very broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Ad-account-level rate limits.",
+    "main_blocker": "App review + business verification for ads permissions",
+    "evidence": [
+      {"url": "https://developers.facebook.com/docs/marketing-apis/", "source_title": "Meta Marketing API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Marketing API over Graph for campaign management.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.facebook.com/docs/app-review", "source_title": "Meta App Review", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "Advanced permissions like ads_management require App Review and business verification.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Dev/test self-serve; production ads permissions gated by review."
+  },
+  {
+    "id": 33,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "LinkedIn Marketing (ads) API on the Microsoft/LinkedIn developer platform.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0; access to the Marketing Developer Platform requires application/approval.",
+    "access_model": "Partner approval",
+    "credential_self_serve": false, "free_or_trial_access": false, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": true,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": false, "rate_limits": "Per-app daily limits.",
+    "main_blocker": "Marketing Developer Platform program approval",
+    "evidence": [
+      {"url": "https://learn.microsoft.com/en-us/linkedin/marketing/", "source_title": "LinkedIn Marketing API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "LinkedIn Marketing APIs use OAuth 2.0.", "retrieved_at": "2026-08-17"},
+      {"url": "https://learn.microsoft.com/en-us/linkedin/marketing/getting-started", "source_title": "Marketing Developer Platform access", "source_type": "official_dev_docs", "supports_fields": ["access_model", "partner_or_contact_sales"], "snippet": "Access to the Marketing Developer Platform requires program approval.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Gated behind LinkedIn's partner program review."
+  },
+  {
+    "id": 34,
+    "research_method": "kiro_web_search",
+    "description": "All-in-one CRM/marketing platform for agencies (white-label).",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "OAuth 2.0 (marketplace apps) and Private Integration tokens (API keys).",
+    "access_model": "Self-serve paid",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://marketplace.gohighlevel.com/docs/other/mcp/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-location rate limits.",
+    "main_blocker": "Paid plan required (14-day trial)",
+    "evidence": [
+      {"url": "https://highlevel.stoplight.io/", "source_title": "HighLevel API (Stoplight)", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "HighLevel REST API with OAuth and private integration tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://marketplace.gohighlevel.com/docs/other/mcp/", "source_title": "HighLevel MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "GHL-MCP provides a standardized way to connect AI models to HighLevel.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Self-serve tokens for paying customers; official MCP."
+  },
+  {
+    "id": 35,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Email marketing and automation platform (Intuit Mailchimp).",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "API key and OAuth 2.0 for apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key concurrency limits.",
+    "main_blocker": "None (free tier + self-serve key)",
+    "evidence": [
+      {"url": "https://mailchimp.com/developer/marketing/api/", "source_title": "Mailchimp Marketing API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Marketing API with API key and OAuth authentication.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.8,
+    "notes": "Free tier + self-serve API key."
+  },
+  {
+    "id": 36,
+    "research_method": "kiro_web_search",
+    "description": "Marketing automation and CRM for ecommerce (email/SMS).",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "Private API keys and OAuth 2.0 for public apps.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://www.klaviyo.com/uk/blog/introducing-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-account rate limits.",
+    "main_blocker": "None (free tier + self-serve key)",
+    "evidence": [
+      {"url": "https://developers.klaviyo.com/en/reference/api_overview", "source_title": "Klaviyo API overview", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Klaviyo REST APIs use private keys and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.klaviyo.com/uk/blog/introducing-mcp-server", "source_title": "Klaviyo MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Klaviyo MCP server bridges Klaviyo and AI platforms.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free tier + self-serve keys; official MCP."
+  },
+  {
+    "id": 37,
+    "research_method": "kiro_web_search",
+    "description": "All-in-one funnel/marketing platform (email, courses, funnels) with a public API.",
+    "auth_methods": ["API Key"],
+    "auth_detail": "Public API key created in profile settings; sent in X-API-Key header.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "First-party documented", "mcp_type": "First-party documented", "mcp_evidence_url": "https://systeme.io/dashboard/profile/public-api-settings",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Documented per-key limits.",
+    "main_blocker": "None (famous free plan + self-serve key)",
+    "evidence": [
+      {"url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io", "source_title": "Create a systeme.io public API key", "source_type": "official_support", "supports_fields": ["auth_methods", "access_model", "api_type"], "snippet": "API keys authenticate requests to our Public API; created under MCP and API keys settings.", "retrieved_at": "2026-08-17"},
+      {"url": "https://systeme.io/dashboard/profile/public-api-settings", "source_title": "systeme.io MCP and API keys settings", "source_type": "official_dev_docs", "supports_fields": ["mcp_status"], "snippet": "Settings section is labeled 'MCP and API keys', indicating first-party MCP key support.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free plan; settings expose both API and MCP keys (first-party MCP)."
+  },
+  {
+    "id": 38,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Pinterest API for content, ads, and analytics.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0; standard/production access requires app review (trial access self-serve).",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-app rate limits.",
+    "main_blocker": "App review required for standard/production access",
+    "evidence": [
+      {"url": "https://developers.pinterest.com/docs/api/v5/introduction/", "source_title": "Pinterest API v5", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "api_type", "api_breadth"], "snippet": "Pinterest REST API v5 uses OAuth 2.0.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.pinterest.com/docs/getting-started/set-up-app/", "source_title": "Pinterest app access", "source_type": "official_dev_docs", "supports_fields": ["access_model", "admin_approval_required"], "snippet": "Trial access is available; standard access requires review.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Trial access self-serve; scale requires review."
+  },
+  {
+    "id": 39,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Meta's Threads API for posting and reading Threads content.",
+    "auth_methods": ["OAuth 2.0"],
+    "auth_detail": "OAuth 2.0 via a Meta app; some scopes require review.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": true, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Narrow",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "moderate", "sandbox_available": true, "rate_limits": "Per-user posting limits.",
+    "main_blocker": "Newer, narrow API; some scopes need review",
+    "evidence": [
+      {"url": "https://developers.facebook.com/docs/threads", "source_title": "Threads API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Threads API uses OAuth 2.0 via a Meta app.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.7,
+    "notes": "Narrow surface; self-serve for basic scopes."
+  },
+  {
+    "id": 40,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Email delivery / transactional + marketing email API (Twilio SendGrid).",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "API keys sent as Bearer tokens; SMTP relay also available.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-plan send + API limits.",
+    "main_blocker": "Sender verification for production sending",
+    "evidence": [
+      {"url": "https://www.twilio.com/docs/sendgrid/api-reference", "source_title": "SendGrid API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "SendGrid v3 REST API authenticated with API keys (Bearer).", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free tier + self-serve API key; SendGrid itself has no standalone MCP found."
+  }
+]

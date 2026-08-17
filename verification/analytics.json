@@ -1,0 +1,1853 @@
+{
+  "n": 100,
+  "auth_distribution": {
+    "OAuth 2.0": 61,
+    "API Key": 60,
+    "Bearer Token": 28,
+    "Basic Auth": 10,
+    "Personal Access Token": 9,
+    "JWT": 4,
+    "Unknown": 2,
+    "None": 2,
+    "HMAC/signature": 1,
+    "Other": 1
+  },
+  "api_type_distribution": {
+    "REST": 93,
+    "Webhooks": 45,
+    "GraphQL": 12,
+    "SDK": 8,
+    "Other": 8,
+    "CLI": 5,
+    "SOAP": 2,
+    "Unknown": 2
+  },
+  "access_distribution": {
+    "Self-serve free": 49,
+    "Self-serve paid": 19,
+    "Self-serve trial": 15,
+    "Enterprise-only": 5,
+    "Admin approval": 4,
+    "Contact sales": 3,
+    "Unknown": 2,
+    "No public API": 2,
+    "Partner approval": 1
+  },
+  "breadth_distribution": {
+    "Broad": 43,
+    "Moderate": 35,
+    "Very broad": 15,
+    "Narrow": 3,
+    "Unknown": 2,
+    "Not applicable": 2
+  },
+  "mcp_distribution": {
+    "None found": 45,
+    "Official": 42,
+    "First-party documented": 7,
+    "Community": 5,
+    "Unknown": 1
+  },
+  "buildability_distribution": {
+    "Easy": 69,
+    "Medium": 14,
+    "Hard": 11,
+    "Not currently feasible": 6
+  },
+  "blocker_distribution": {
+    "Paid plan required for ongoing use": 8,
+    "None (free tier + self-serve token)": 6,
+    "Paid plan required": 4,
+    "None (free plan + self-serve token)": 4,
+    "None (free plan + self-serve key)": 2,
+    "Pay-as-you-go beyond trial credit": 2,
+    "None (free tier + self-serve key)": 2,
+    "Product is a local CLI/library, not a hosted callable API": 2,
+    "Connected App / OAuth setup complexity; production value tied to customer orgs": 1,
+    "None (advanced objects may need paid tiers)": 1,
+    "Self-hosting or cloud plan needed; no official MCP": 1,
+    "Legacy platform with limited ongoing investment": 1,
+    "OAuth + data-center setup complexity": 1,
+    "Enterprise customer + admin must enable API access": 1,
+    "Paid product; only admins can mint API tokens": 1,
+    "Paid product (self-serve keys)": 1,
+    "Enterprise-only; no self-serve signup": 1,
+    "Workspace admin may need to approve app installation": 1,
+    "None major (limited API surface)": 1,
+    "App/tenant token model complexity": 1,
+    "Must install the API addon first": 1,
+    "None (bot verification needed at scale >100 servers)": 1,
+    "None (free self-serve bot token)": 1,
+    "Meta app + Business verification + phone number registration": 1,
+    "Developer token approval + OAuth setup": 1,
+    "App review + business verification for ads permissions": 1,
+    "Marketing Developer Platform program approval": 1,
+    "Paid plan required (14-day trial)": 1,
+    "None (famous free plan + self-serve key)": 1,
+    "App review required for standard/production access": 1,
+    "Newer, narrow API; some scopes need review": 1,
+    "Sender verification for production sending": 1,
+    "None (free partner/dev stores)": 1,
+    "Requires your own WordPress/WooCommerce host": 1,
+    "None (free dev sandbox stores)": 1,
+    "Enterprise product; access via customer/partner instance": 1,
+    "Self-host Magento Open Source; Adobe Commerce (cloud) is paid": 1,
+    "Commerce APIs require a paid Commerce plan": 1,
+    "Narrow API surface": 1,
+    "Developer registration + Amazon approval and a Professional selling account": 1,
+    "No public developer API documentation found (only a Zapier partner integration)": 1,
+    "Prepaid funding required (no free tier)": 1,
+    "API v3 access tied to the Enterprise plan": 1,
+    "None (free plan, no credit card)": 1,
+    "None (free credits + self-serve key)": 1,
+    "KYC + paid plan for most products": 1,
+    "Usage-based billing (prepaid balance)": 1,
+    "Enrichment consumes credits; API is beta": 1,
+    "None": 1,
+    "None (free tier + self-serve keys)": 1,
+    "It's a database (connection-oriented), not a broad SaaS REST API": 1,
+    "Consumption billing after 30-day trial": 1,
+    "None (free M0 cluster + self-serve keys)": 1,
+    "Paid after 14-day trial (free tier limited)": 1,
+    "None (free developer tier + self-serve token)": 1,
+    "None (free plan + self-serve integration token)": 1,
+    "None (free/trial + self-serve token)": 1,
+    "Paid plan for ongoing use": 1,
+    "None (free tier for a single user + self-serve token)": 1,
+    "None (test mode immediate; live charges need business activation)": 1,
+    "Live data requires Plaid production approval + paid plan": 1,
+    "Geographic/regulatory restrictions on account + trading": 1,
+    "Requires a merchant contract (contact sales / onboarding)": 1,
+    "Insufficient public evidence to verify API/auth/access": 1,
+    "Production app may require Intuit review for some scopes": 1,
+    "None (free developer account + demo company)": 1,
+    "Must be a Brex customer to obtain credentials": 1,
+    "Must be a Ramp customer to obtain credentials": 1,
+    "Requires a separate Direct Data enterprise contract": 1,
+    "Consumer product has no API; only NotebookLM Enterprise via Google Cloud": 1,
+    "Public API gated to Enterprise (contact account manager)": 1,
+    "None (API keys included on all plans, incl. free)": 1,
+    "Paid API tier for production use": 1,
+    "Credit-based/paid usage (enterprise SLAs for scale)": 1,
+    "Paid product to obtain credentials": 1,
+    "Credit-based/paid generation": 1,
+    "Third-party dependency and ToS risk relative to YouTube": 1,
+    "API/MCP capabilities tied to paid plans": 1
+  },
+  "buildability_by_category": {
+    "CRM and Sales": {
+      "Easy": 8,
+      "Medium": 1,
+      "Hard": 1
+    },
+    "Support and Helpdesk": {
+      "Easy": 5,
+      "Medium": 4,
+      "Hard": 1
+    },
+    "Communications and Messaging": {
+      "Easy": 8,
+      "Hard": 1,
+      "Medium": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "Hard": 3,
+      "Easy": 6,
+      "Medium": 1
+    },
+    "Ecommerce": {
+      "Easy": 6,
+      "Not currently feasible": 2,
+      "Medium": 1,
+      "Hard": 1
+    },
+    "Data, SEO and Scraping": {
+      "Medium": 4,
+      "Hard": 1,
+      "Easy": 4,
+      "Not currently feasible": 1
+    },
+    "Developer, Infra and Data Platforms": {
+      "Easy": 10
+    },
+    "Productivity and Project Management": {
+      "Easy": 10
+    },
+    "Finance and Fintech": {
+      "Easy": 7,
+      "Hard": 2,
+      "Not currently feasible": 1
+    },
+    "AI, Research and Media-native": {
+      "Not currently feasible": 2,
+      "Hard": 1,
+      "Easy": 5,
+      "Medium": 2
+    }
+  },
+  "access_by_category": {
+    "CRM and Sales": {
+      "Self-serve free": 6,
+      "Self-serve trial": 2,
+      "Self-serve paid": 1,
+      "Enterprise-only": 1
+    },
+    "Support and Helpdesk": {
+      "Self-serve trial": 6,
+      "Self-serve paid": 3,
+      "Contact sales": 1
+    },
+    "Communications and Messaging": {
+      "Self-serve free": 6,
+      "Self-serve trial": 2,
+      "Admin approval": 1,
+      "Self-serve paid": 1
+    },
+    "Marketing, Ads, Email and Social": {
+      "Admin approval": 2,
+      "Partner approval": 1,
+      "Self-serve paid": 1,
+      "Self-serve free": 4,
+      "Self-serve trial": 2
+    },
+    "Ecommerce": {
+      "Self-serve free": 6,
+      "Enterprise-only": 1,
+      "Self-serve paid": 1,
+      "Admin approval": 1,
+      "Unknown": 1
+    },
+    "Data, SEO and Scraping": {
+      "Self-serve paid": 5,
+      "Enterprise-only": 1,
+      "Self-serve free": 3,
+      "No public API": 1
+    },
+    "Developer, Infra and Data Platforms": {
+      "Self-serve free": 8,
+      "Self-serve trial": 2
+    },
+    "Productivity and Project Management": {
+      "Self-serve free": 9,
+      "Self-serve trial": 1
+    },
+    "Finance and Fintech": {
+      "Self-serve free": 5,
+      "Contact sales": 2,
+      "Unknown": 1,
+      "Self-serve paid": 2
+    },
+    "AI, Research and Media-native": {
+      "Enterprise-only": 2,
+      "Self-serve free": 2,
+      "Self-serve paid": 5,
+      "No public API": 1
+    }
+  },
+  "avg_score_by_category": {
+    "CRM and Sales": 86.1,
+    "Support and Helpdesk": 77.3,
+    "Communications and Messaging": 86.4,
+    "Marketing, Ads, Email and Social": 74.7,
+    "Ecommerce": 70.1,
+    "Data, SEO and Scraping": 68.4,
+    "Developer, Infra and Data Platforms": 97.7,
+    "Productivity and Project Management": 97.2,
+    "Finance and Fintech": 72.7,
+    "AI, Research and Media-native": 64.1
+  },
+  "counts": {
+    "gated": 15,
+    "self_serve": 64,
+    "has_official_or_firstparty_mcp": 49,
+    "has_any_mcp": 54,
+    "easy": 69,
+    "medium": 14,
+    "hard": 11,
+    "not_feasible": 6,
+    "no_public_api": 2
+  },
+  "relationship_selfserve_vs_buildability": {
+    "Easy": 62,
+    "Medium": 2
+  },
+  "relationship_gated_vs_buildability": {
+    "Hard": 11,
+    "Not currently feasible": 4
+  },
+  "relationship_mcp_vs_buildability": {
+    "has_mcp": {
+      "Easy": 49,
+      "Hard": 3,
+      "Medium": 2
+    },
+    "no_mcp": {
+      "Easy": 20,
+      "Medium": 12,
+      "Hard": 8,
+      "Not currently feasible": 6
+    }
+  },
+  "mcp_apps": [
+    "Salesforce",
+    "HubSpot",
+    "Pipedrive",
+    "Attio",
+    "Zoho CRM",
+    "DealCloud",
+    "Intercom",
+    "Freshdesk",
+    "Front",
+    "Slack",
+    "Twilio",
+    "Zoho Cliq",
+    "GoHighLevel",
+    "Klaviyo",
+    "systeme.io",
+    "Shopify",
+    "Ahrefs",
+    "Apify",
+    "Firecrawl",
+    "Bright Data",
+    "GitHub",
+    "Vercel",
+    "Netlify",
+    "Cloudflare",
+    "Supabase",
+    "Snowflake",
+    "MongoDB Atlas",
+    "Datadog",
+    "Sentry",
+    "Notion",
+    "Airtable",
+    "Linear",
+    "Jira",
+    "Asana",
+    "Monday.com",
+    "ClickUp",
+    "Smartsheet",
+    "Stripe",
+    "Plaid",
+    "QuickBooks",
+    "Xero",
+    "Brex",
+    "Ramp",
+    "Otter AI",
+    "Consensus",
+    "Devin",
+    "higgsfield",
+    "YouTube Transcript",
+    "Grain"
+  ],
+  "easy_wins_ranked": [
+    {
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "JWT"
+      ],
+      "api_type": [
+        "REST",
+        "SOAP",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "Connected App / OAuth setup complexity; production value tied to customer orgs"
+    },
+    {
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None (advanced objects may need paid tiers)"
+    },
+    {
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Workspace admin may need to approve app installation"
+    },
+    {
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve key)"
+    },
+    {
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None (free partner/dev stores)"
+    },
+    {
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "GitHub",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Personal Access Token",
+        "JWT"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None"
+    },
+    {
+      "app": "Vercel",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "Netlify",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "CLI"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "Supabase",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve keys)"
+    },
+    {
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free M0 cluster + self-serve keys)"
+    },
+    {
+      "app": "Sentry",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free developer tier + self-serve token)"
+    },
+    {
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve integration token)"
+    },
+    {
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve token)"
+    },
+    {
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve key)"
+    },
+    {
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Basic Auth",
+        "Personal Access Token"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve token)"
+    },
+    {
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "GraphQL"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free/trial + self-serve token)"
+    },
+    {
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve token)"
+    },
+    {
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks",
+        "SDK"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "None (test mode immediate; live charges need business activation)"
+    },
+    {
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "score": 100,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Live data requires Plaid production approval + paid plan"
+    },
+    {
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "score": 98,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "None (free plan + self-serve key)"
+    },
+    {
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "score": 98,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "OAuth + data-center setup complexity"
+    },
+    {
+      "app": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "score": 98,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "None (free credits + self-serve key)"
+    },
+    {
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "score": 98,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Production app may require Intuit review for some scopes"
+    },
+    {
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "score": 98,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "First-party documented",
+      "blocker": "None (free developer account + demo company)"
+    },
+    {
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "score": 96,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "Basic Auth",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "Pay-as-you-go beyond trial credit"
+    },
+    {
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 96,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "First-party documented",
+      "blocker": "None (famous free plan + self-serve key)"
+    },
+    {
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "score": 96,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "First-party documented",
+      "blocker": "Third-party dependency and ToS risk relative to YouTube"
+    },
+    {
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "None major (limited API surface)"
+    },
+    {
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "Community",
+      "blocker": "None (bot verification needed at scale >100 servers)"
+    },
+    {
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "Community",
+      "blocker": "None (free self-serve bot token)"
+    },
+    {
+      "app": "Pipedrive",
+      "category": "CRM and Sales",
+      "score": 94,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "score": 94,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "score": 94,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "score": 94,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "None found",
+      "blocker": "None (free dev sandbox stores)"
+    },
+    {
+      "app": "Datadog",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 94,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Very broad",
+      "mcp": "Official",
+      "blocker": "Paid after 14-day trial (free tier limited)"
+    },
+    {
+      "app": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "score": 94,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "Bearer Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Paid plan for ongoing use"
+    },
+    {
+      "app": "Twenty",
+      "category": "CRM and Sales",
+      "score": 93,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Community",
+      "blocker": "Self-hosting or cloud plan needed; no official MCP"
+    },
+    {
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "score": 92,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key",
+        "Basic Auth"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "First-party documented",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "score": 92,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "App/tenant token model complexity"
+    },
+    {
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 92,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "None (free tier + self-serve key)"
+    },
+    {
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 92,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "Sender verification for production sending"
+    },
+    {
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "score": 92,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "Basic Auth"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "Requires your own WordPress/WooCommerce host"
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "score": 92,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "SOAP"
+      ],
+      "breadth": "Very broad",
+      "mcp": "None found",
+      "blocker": "Self-host Magento Open Source; Adobe Commerce (cloud) is paid"
+    },
+    {
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 92,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "JWT",
+        "OAuth 2.0",
+        "Personal Access Token"
+      ],
+      "api_type": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Consumption billing after 30-day trial"
+    },
+    {
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 91,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Basic Auth",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST",
+        "Other",
+        "GraphQL"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Community",
+      "blocker": "It's a database (connection-oriented), not a broad SaaS REST API"
+    },
+    {
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "score": 90,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Personal Access Token",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "None (free tier for a single user + self-serve token)"
+    },
+    {
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "score": 90,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "HMAC/signature"
+      ],
+      "api_type": [
+        "REST",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "Geographic/regulatory restrictions on account + trading"
+    },
+    {
+      "app": "Fathom",
+      "category": "AI, Research and Media-native",
+      "score": 90,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks",
+        "SDK"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "None (API keys included on all plans, incl. free)"
+    },
+    {
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "score": 88,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Must install the API addon first"
+    },
+    {
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "score": 88,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "None (free tier + self-serve token)"
+    },
+    {
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "score": 88,
+      "access_model": "Self-serve free",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "None (free plan, no credit card)"
+    },
+    {
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "score": 88,
+      "access_model": "Self-serve free",
+      "auth": [
+        "Bearer Token",
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "None (free plan + self-serve token)"
+    },
+    {
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "score": 86,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0",
+        "API Key",
+        "Basic Auth"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Very broad",
+      "mcp": "None found",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "score": 85,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Legacy platform with limited ongoing investment"
+    },
+    {
+      "app": "Help Scout",
+      "category": "Support and Helpdesk",
+      "score": 84,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "score": 84,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key",
+        "JWT"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "None found",
+      "blocker": "Pay-as-you-go beyond trial credit"
+    },
+    {
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "score": 83,
+      "access_model": "Self-serve free",
+      "auth": [
+        "OAuth 2.0",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Narrow",
+      "mcp": "None found",
+      "blocker": "Narrow API surface"
+    },
+    {
+      "app": "Close",
+      "category": "CRM and Sales",
+      "score": 82,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 82,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Paid plan required (14-day trial)"
+    },
+    {
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "score": 82,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Must be a Brex customer to obtain credentials"
+    },
+    {
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "score": 82,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "OAuth 2.0",
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "Must be a Ramp customer to obtain credentials"
+    },
+    {
+      "app": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "score": 80,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key",
+        "Basic Auth"
+      ],
+      "api_type": [
+        "REST",
+        "Other"
+      ],
+      "breadth": "Broad",
+      "mcp": "Official",
+      "blocker": "KYC + paid plan for most products"
+    },
+    {
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "score": 80,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "CLI",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "Credit-based/paid generation"
+    },
+    {
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 78,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "App review required for standard/production access"
+    },
+    {
+      "app": "Consensus",
+      "category": "AI, Research and Media-native",
+      "score": 78,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "Paid API tier for production use"
+    },
+    {
+      "app": "Devin",
+      "category": "AI, Research and Media-native",
+      "score": 78,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Official",
+      "blocker": "Paid product to obtain credentials"
+    },
+    {
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "score": 77,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid plan required for ongoing use"
+    },
+    {
+      "app": "Grain",
+      "category": "AI, Research and Media-native",
+      "score": 76,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "First-party documented",
+      "blocker": "API/MCP capabilities tied to paid plans"
+    },
+    {
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "score": 73,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "Basic Auth",
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "Community",
+      "blocker": "Paid plan required"
+    },
+    {
+      "app": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 73,
+      "access_model": "Self-serve trial",
+      "auth": [
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Narrow",
+      "mcp": "None found",
+      "blocker": "Newer, narrow API; some scopes need review"
+    },
+    {
+      "app": "Plain",
+      "category": "Support and Helpdesk",
+      "score": 70,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key",
+        "Bearer Token"
+      ],
+      "api_type": [
+        "GraphQL",
+        "Webhooks",
+        "SDK"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid product (self-serve keys)"
+    },
+    {
+      "app": "Aircall",
+      "category": "Communications and Messaging",
+      "score": 70,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "Basic Auth",
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid plan required"
+    },
+    {
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "score": 70,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "Basic Auth",
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Broad",
+      "mcp": "Unknown",
+      "blocker": "Prepaid funding required (no free tier)"
+    },
+    {
+      "app": "Pylon",
+      "category": "Support and Helpdesk",
+      "score": 68,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "Bearer Token",
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid product; only admins can mint API tokens"
+    },
+    {
+      "app": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "score": 68,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid plan required"
+    },
+    {
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "score": 68,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Usage-based billing (prepaid balance)"
+    },
+    {
+      "app": "Clay",
+      "category": "Data, SEO and Scraping",
+      "score": 68,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "CLI"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Enrichment consumes credits; API is beta"
+    },
+    {
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "score": 68,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST",
+        "SDK"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Credit-based/paid usage (enterprise SLAs for scale)"
+    },
+    {
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "score": 67,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key",
+        "OAuth 2.0"
+      ],
+      "api_type": [
+        "REST",
+        "Webhooks"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Commerce APIs require a paid Commerce plan"
+    },
+    {
+      "app": "Copper",
+      "category": "CRM and Sales",
+      "score": 65,
+      "access_model": "Self-serve paid",
+      "auth": [
+        "API Key"
+      ],
+      "api_type": [
+        "REST"
+      ],
+      "breadth": "Moderate",
+      "mcp": "None found",
+      "blocker": "Paid plan required"
+    }
+  ],
+  "outreach_ranked": [
+    {
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "score": 0,
+      "access_model": "No public API",
+      "blocker": "Product is a local CLI/library, not a hosted callable API"
+    },
+    {
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "score": 0,
+      "access_model": "No public API",
+      "blocker": "Product is a local CLI/library, not a hosted callable API"
+    },
+    {
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "score": 5,
+      "access_model": "Unknown",
+      "blocker": "No public developer API documentation found (only a Zapier partner integration)"
+    },
+    {
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "score": 5,
+      "access_model": "Unknown",
+      "blocker": "Insufficient public evidence to verify API/auth/access"
+    },
+    {
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "score": 29,
+      "access_model": "Enterprise-only",
+      "blocker": "Consumer product has no API; only NotebookLM Enterprise via Google Cloud"
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "score": 33,
+      "access_model": "Enterprise-only",
+      "blocker": "Enterprise product; access via customer/partner instance"
+    },
+    {
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "score": 35,
+      "access_model": "Contact sales",
+      "blocker": "Enterprise-only; no self-serve signup"
+    },
+    {
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 35,
+      "access_model": "Partner approval",
+      "blocker": "Marketing Developer Platform program approval"
+    },
+    {
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "score": 35,
+      "access_model": "Contact sales",
+      "blocker": "Requires a merchant contract (contact sales / onboarding)"
+    },
+    {
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "score": 37,
+      "access_model": "Contact sales",
+      "blocker": "Requires a separate Direct Data enterprise contract"
+    },
+    {
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "score": 44,
+      "access_model": "Enterprise-only",
+      "blocker": "API v3 access tied to the Enterprise plan"
+    },
+    {
+      "app": "DealCloud",
+      "category": "CRM and Sales",
+      "score": 46,
+      "access_model": "Enterprise-only",
+      "blocker": "Enterprise customer + admin must enable API access"
+    },
+    {
+      "app": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "score": 46,
+      "access_model": "Enterprise-only",
+      "blocker": "Public API gated to Enterprise (contact account manager)"
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "score": 47,
+      "access_model": "Admin approval",
+      "blocker": "Developer registration + Amazon approval and a Professional selling account"
+    },
+    {
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "score": 49,
+      "access_model": "Admin approval",
+      "blocker": "Meta app + Business verification + phone number registration"
+    },
+    {
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 49,
+      "access_model": "Admin approval",
+      "blocker": "App review + business verification for ads permissions"
+    },
+    {
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 50,
+      "access_model": "Admin approval",
+      "blocker": "Developer token approval + OAuth setup"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "app": "Google Ads",
+  "id": 31,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Google Ads API documentation authentication",
+        "Google Ads developer API OAuth API key",
+        "Google Ads API pricing free trial developer access",
+        "Google Ads official MCP server model context protocol",
+        "Google Ads REST API GraphQL webhooks docs",
+        "Google Ads composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "https://developers.google.com/google-ads/api/docs/access-levels"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Admin approval",
+        "api_type": [
+          "REST",
+          "Other"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -10,
+        "api_type": 8,
+        "api_breadth": 6,
+        "auth_methods": 3,
+        "mcp_status": 0,
+        "doc_quality": 3
+      },
+      "score": 50,
+      "label": "Hard"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.85,
+  "evidence_count": 2
+}

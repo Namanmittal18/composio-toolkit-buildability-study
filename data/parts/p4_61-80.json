@@ -1,0 +1,399 @@
+[
+  {
+    "id": 61,
+    "research_method": "kiro_web_search",
+    "description": "Developer platform for hosting Git repositories, code review, issues, and CI/CD.",
+    "auth_methods": ["OAuth 2.0", "Personal Access Token", "JWT"],
+    "auth_detail": "OAuth apps, fine-grained/classic PATs, and GitHub App installation tokens (JWT-signed).",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "Webhooks"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/github/github-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "5,000 req/hour authenticated (higher for Apps/Enterprise).",
+    "main_blocker": "None",
+    "evidence": [
+      {"url": "https://docs.github.com/en/rest", "source_title": "GitHub REST API docs", "source_type": "official_api_docs", "supports_fields": ["api_type", "api_breadth"], "snippet": "REST API covering repositories, issues, pulls, actions, and more.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authorizing-oauth-apps", "source_title": "Authorizing OAuth apps", "source_type": "official_auth_docs", "supports_fields": ["auth_methods", "access_model"], "snippet": "OAuth apps and PATs can be created self-serve for free.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/github/github-mcp-server", "source_title": "GitHub's official MCP Server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "GitHub's official MCP Server; a remote server is hosted by GitHub.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.95,
+    "notes": "REST + GraphQL, official remote MCP; strong easy-win."
+  },
+  {
+    "id": 62,
+    "research_method": "kiro_web_search",
+    "description": "Frontend cloud / deployment platform with a REST API.",
+    "auth_methods": ["Bearer Token", "OAuth 2.0"],
+    "auth_detail": "Access tokens (Bearer) created in dashboard; OAuth for integrations.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://vercel.com/docs/ai-tooling/vercel-mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://vercel.com/docs/rest-api", "source_title": "Vercel REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Vercel REST API authenticated with access tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://vercel.com/docs/ai-tooling/vercel-mcp", "source_title": "Vercel MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Vercel MCP is Vercel's official remote MCP server (mcp.vercel.com) with OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free tier; official remote MCP with public + authenticated tools."
+  },
+  {
+    "id": 63,
+    "research_method": "kiro_web_search",
+    "description": "Web hosting and deployment platform with an API and CLI.",
+    "auth_methods": ["Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Personal access tokens (Bearer) and OAuth applications.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "CLI"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://docs.netlify.com/api/get-started/", "source_title": "Netlify API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Netlify REST API authenticated with a personal access token.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.netlify.com/build/build-with-ai/netlify-mcp-server/", "source_title": "Netlify MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Netlify MCP Server lets code agents use the Netlify API and CLI.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free tier; official MCP."
+  },
+  {
+    "id": 64,
+    "research_method": "kiro_web_search",
+    "description": "Edge network / security / developer platform (DNS, Workers, R2, etc.).",
+    "auth_methods": ["API Key", "Bearer Token", "OAuth 2.0"],
+    "auth_detail": "Scoped API tokens (Bearer), legacy global API key, OAuth for some flows.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-endpoint rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://developers.cloudflare.com/api/", "source_title": "Cloudflare API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Cloudflare REST API using scoped API tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/", "source_title": "Cloudflare's own MCP servers", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Cloudflare's own MCP servers let clients read configs and make changes across services.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free tier; multiple official MCP servers."
+  },
+  {
+    "id": 65,
+    "research_method": "kiro_web_search",
+    "description": "Open-source Firebase alternative (Postgres, auth, storage, realtime).",
+    "auth_methods": ["API Key", "Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Project API keys (anon/service_role), management PATs, OAuth for the Management API.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://supabase.com/docs/guides/ai-tools/mcp",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-project limits.",
+    "main_blocker": "None (free tier + self-serve keys)",
+    "evidence": [
+      {"url": "https://supabase.com/docs/reference/api/introduction", "source_title": "Supabase APIs", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Auto-generated REST (PostgREST) + GraphQL + realtime, plus Management API.", "retrieved_at": "2026-08-17"},
+      {"url": "https://supabase.com/docs/guides/ai-tools/mcp", "source_title": "Supabase MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Supabase MCP server connects AI tools to your Supabase projects.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free tier; official MCP."
+  },
+  {
+    "id": 66,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Graph database (self-hosted Community/Enterprise and Aura cloud).",
+    "auth_methods": ["Basic Auth", "Bearer Token"],
+    "auth_detail": "Database user/password (Basic) over Bolt/HTTP; Aura API uses bearer tokens.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Other", "GraphQL"],
+    "api_breadth": "Moderate",
+    "mcp_status": "Community", "mcp_type": "Community", "mcp_evidence_url": "https://github.com/neo4j-contrib/mcp-neo4j",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Deployment dependent.",
+    "main_blocker": "It's a database (connection-oriented), not a broad SaaS REST API",
+    "evidence": [
+      {"url": "https://neo4j.com/docs/query-api/current/", "source_title": "Neo4j Query API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Neo4j exposes Bolt/HTTP query interfaces with user/password auth; Aura free tier available.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/neo4j-contrib/mcp-neo4j", "source_title": "neo4j-contrib mcp-neo4j", "source_type": "secondary_docs", "supports_fields": ["mcp_status"], "snippet": "Community/Neo4j-contrib MCP servers for Neo4j.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free Community edition + Aura free tier; MCP via neo4j-contrib (community)."
+  },
+  {
+    "id": 67,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Cloud data warehouse with a SQL REST API and drivers.",
+    "auth_methods": ["JWT", "OAuth 2.0", "Personal Access Token"],
+    "auth_detail": "Key-pair (JWT) auth, OAuth, and programmatic access tokens.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "SDK"],
+    "api_breadth": "Broad",
+    "mcp_status": "Unknown", "mcp_type": "Unknown", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Warehouse/credit based.",
+    "main_blocker": "Consumption billing after 30-day trial",
+    "evidence": [
+      {"url": "https://docs.snowflake.com/en/developer-guide/sql-api/index", "source_title": "Snowflake SQL API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "SQL REST API with key-pair/OAuth authentication.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "30-day free trial self-serve; MCP not verified this run."
+  },
+  {
+    "id": 68,
+    "research_method": "kiro_web_search",
+    "description": "Managed MongoDB cloud (Atlas) with an Admin API and Data API.",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "Programmatic API keys (digest) / service accounts; Data API keys.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Other"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://www.mongodb.com/products/tools/mcp-server",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-project API limits.",
+    "main_blocker": "None (free M0 cluster + self-serve keys)",
+    "evidence": [
+      {"url": "https://www.mongodb.com/docs/atlas/api/", "source_title": "Atlas Administration API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Atlas Admin API with programmatic API keys.", "retrieved_at": "2026-08-17"},
+      {"url": "https://www.mongodb.com/products/tools/mcp-server", "source_title": "MongoDB MCP Server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The MCP Server connects to any MongoDB deployment including Atlas.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free M0 cluster; official MCP."
+  },
+  {
+    "id": 69,
+    "research_method": "kiro_web_search",
+    "description": "Observability platform (metrics, logs, traces, monitors).",
+    "auth_methods": ["API Key", "Bearer Token"],
+    "auth_detail": "API keys + application keys; OAuth for the MCP login.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.datadoghq.com/mcp_server/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-endpoint rate limits.",
+    "main_blocker": "Paid after 14-day trial (free tier limited)",
+    "evidence": [
+      {"url": "https://docs.datadoghq.com/api/latest/", "source_title": "Datadog API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Datadog REST API using API + application keys.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.datadoghq.com/mcp_server/", "source_title": "Datadog MCP Server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Datadog's managed MCP server connects AI agents to observability data.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Trial + limited free tier; official MCP."
+  },
+  {
+    "id": 70,
+    "research_method": "kiro_web_search",
+    "description": "Error tracking and performance monitoring platform.",
+    "auth_methods": ["Bearer Token", "OAuth 2.0"],
+    "auth_detail": "Auth tokens (Bearer); OAuth for integrations.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://docs.sentry.io/ai/mcp/",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "None (free developer tier + self-serve token)",
+    "evidence": [
+      {"url": "https://docs.sentry.io/api/", "source_title": "Sentry API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Sentry REST API authenticated with auth tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://docs.sentry.io/ai/mcp/", "source_title": "Sentry MCP Server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "The Sentry MCP Server connects AI tools to issues, errors, projects, and Seer analysis.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free tier; official MCP (mcp.sentry.dev)."
+  },
+  {
+    "id": 71,
+    "research_method": "kiro_web_search",
+    "description": "Docs/wiki/database workspace with an API and remote MCP.",
+    "auth_methods": ["OAuth 2.0", "API Key"],
+    "auth_detail": "Internal integration tokens (API key) and OAuth 2.0 for public integrations.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/makenotion/notion-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "~3 requests/sec average.",
+    "main_blocker": "None (free plan + self-serve integration token)",
+    "evidence": [
+      {"url": "https://developers.notion.com/reference/intro", "source_title": "Notion API reference", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Notion REST API with integration tokens and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/makenotion/notion-mcp-server", "source_title": "Official Notion MCP Server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "Official Notion MCP Server; a remote MCP with OAuth is also available.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free plan; official MCP (local + remote)."
+  },
+  {
+    "id": 72,
+    "research_method": "kiro_web_search",
+    "description": "Spreadsheet-database hybrid with a REST API and webhooks.",
+    "auth_methods": ["Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Personal access tokens (Bearer) and OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://support.airtable.com/docs/using-the-airtable-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "5 req/sec per base.",
+    "main_blocker": "None (free plan + self-serve token)",
+    "evidence": [
+      {"url": "https://airtable.com/developers/web/api/introduction", "source_title": "Airtable Web API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Airtable Web API with personal access tokens and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://support.airtable.com/docs/using-the-airtable-mcp-server", "source_title": "Airtable MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Airtable's MCP server lets AI tools query your data and act on your behalf.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free plan; official MCP."
+  },
+  {
+    "id": 73,
+    "research_method": "kiro_web_search",
+    "description": "Issue tracking / project management for software teams (GraphQL API).",
+    "auth_methods": ["API Key", "OAuth 2.0"],
+    "auth_detail": "Personal API keys and OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["GraphQL", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://linear.app/changelog/2025-05-01-mcp",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-key GraphQL complexity limits.",
+    "main_blocker": "None (free plan + self-serve key)",
+    "evidence": [
+      {"url": "https://developers.linear.app/docs", "source_title": "Linear API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Linear GraphQL API with API keys and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://linear.app/changelog/2025-05-01-mcp", "source_title": "Linear MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Official MCP server for agents to access Linear data.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free plan; official MCP."
+  },
+  {
+    "id": 74,
+    "research_method": "kiro_web_search",
+    "description": "Atlassian Jira project tracking; Rovo MCP spans Jira/Confluence.",
+    "auth_methods": ["OAuth 2.0", "Basic Auth", "Personal Access Token"],
+    "auth_detail": "OAuth 2.0 (3LO), API tokens with email (Basic) for Cloud, PATs for Data Center.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "GraphQL"],
+    "api_breadth": "Very broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://github.com/atlassian/atlassian-mcp-server",
+    "doc_quality": "good", "sandbox_available": true, "rate_limits": "Per-tenant rate limits.",
+    "main_blocker": "None (free tier + self-serve token)",
+    "evidence": [
+      {"url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/", "source_title": "Jira Cloud REST API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Jira Cloud REST API with OAuth 2.0 and API tokens.", "retrieved_at": "2026-08-17"},
+      {"url": "https://github.com/atlassian/atlassian-mcp-server", "source_title": "Atlassian Rovo MCP Server", "source_type": "official_repo", "supports_fields": ["mcp_status"], "snippet": "Official remote MCP server for Jira, Confluence, JSM, Bitbucket, Compass.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free tier; official Rovo MCP (GA)."
+  },
+  {
+    "id": 75,
+    "research_method": "kiro_web_search",
+    "description": "Work management platform with a REST API and V2 MCP.",
+    "auth_methods": ["Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Personal access tokens (Bearer) and OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "None (free plan + self-serve token)",
+    "evidence": [
+      {"url": "https://developers.asana.com/docs/overview", "source_title": "Asana API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Asana REST API with PATs and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developers.asana.com/docs/using-asanas-mcp-server", "source_title": "Asana MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "Asana's V2 MCP server is generally available and uses OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.9,
+    "notes": "Free plan; official V2 MCP (GA)."
+  },
+  {
+    "id": 76,
+    "research_method": "kiro_web_search",
+    "description": "Work OS / project management with a GraphQL API and hosted MCP.",
+    "auth_methods": ["Bearer Token", "OAuth 2.0"],
+    "auth_detail": "API tokens (Bearer) and OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["GraphQL"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Complexity budget per minute.",
+    "main_blocker": "None (free/trial + self-serve token)",
+    "evidence": [
+      {"url": "https://developer.monday.com/api-reference/docs", "source_title": "monday.com API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "monday.com GraphQL API with token and OAuth auth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://support.monday.com/hc/en-us/articles/28588158981266-Get-started-with-monday-MCP", "source_title": "monday MCP", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "monday MCP is the hosted server giving AI tools secure access to your workspace.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free/trial + self-serve token; official hosted MCP."
+  },
+  {
+    "id": 77,
+    "research_method": "kiro_web_search",
+    "description": "Project management / docs / tasks platform with a REST API.",
+    "auth_methods": ["Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Personal API tokens and OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "Official", "mcp_type": "Official", "mcp_evidence_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits by plan.",
+    "main_blocker": "None (free plan + self-serve token)",
+    "evidence": [
+      {"url": "https://developer.clickup.com/reference", "source_title": "ClickUp API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "ClickUp REST API with personal tokens and OAuth.", "retrieved_at": "2026-08-17"},
+      {"url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server", "source_title": "ClickUp MCP server", "source_type": "official_mcp", "supports_fields": ["mcp_status"], "snippet": "ClickUp's MCP server lets AI agents interact with workspace data.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.85,
+    "notes": "Free plan; official MCP."
+  },
+  {
+    "id": 78,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Docs platform that blends documents, spreadsheets, and apps.",
+    "auth_methods": ["Bearer Token", "API Key"],
+    "auth_detail": "API tokens (Bearer) generated in account settings.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "None (free plan + self-serve token)",
+    "evidence": [
+      {"url": "https://coda.io/developers/apis/v1", "source_title": "Coda API v1", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Coda REST API authenticated with a bearer API token.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free plan; self-serve token. MCP not found."
+  },
+  {
+    "id": 79,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Work management / spreadsheets platform with a REST API.",
+    "auth_methods": ["Bearer Token", "OAuth 2.0"],
+    "auth_detail": "API access tokens (Bearer) and OAuth 2.0.",
+    "access_model": "Self-serve trial",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": true, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Broad",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "Per-token rate limits.",
+    "main_blocker": "Paid plan for ongoing use",
+    "evidence": [
+      {"url": "https://smartsheet.redoc.ly/", "source_title": "Smartsheet API", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Smartsheet REST API with bearer tokens and OAuth.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Trial + self-serve token; MCP not found."
+  },
+  {
+    "id": 80,
+    "research_method": "canonical_docs+model_knowledge",
+    "description": "Time tracking and invoicing tool with a REST API.",
+    "auth_methods": ["Personal Access Token", "OAuth 2.0"],
+    "auth_detail": "Personal access tokens (Bearer) with an account ID header; OAuth 2.0.",
+    "access_model": "Self-serve free",
+    "credential_self_serve": true, "free_or_trial_access": true, "paid_plan_required": false, "admin_approval_required": false, "partner_or_contact_sales": false,
+    "api_type": ["REST", "Webhooks"],
+    "api_breadth": "Moderate",
+    "mcp_status": "None found", "mcp_type": "None", "mcp_evidence_url": "",
+    "doc_quality": "good", "sandbox_available": false, "rate_limits": "100 req/15s per token.",
+    "main_blocker": "None (free tier for a single user + self-serve token)",
+    "evidence": [
+      {"url": "https://help.getharvest.com/api-v2/", "source_title": "Harvest API v2", "source_type": "official_api_docs", "supports_fields": ["auth_methods", "access_model", "api_type", "api_breadth"], "snippet": "Harvest API v2 with personal access tokens and OAuth2.", "retrieved_at": "2026-08-17"}
+    ],
+    "confidence": 0.75,
+    "notes": "Free tier + self-serve token; MCP not found."
+  }
+]

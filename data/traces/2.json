@@ -1,0 +1,67 @@
+{
+  "app": "HubSpot",
+  "id": 2,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "HubSpot API documentation authentication",
+        "HubSpot developer API OAuth API key",
+        "HubSpot API pricing free trial developer access",
+        "HubSpot official MCP server model context protocol",
+        "HubSpot REST API GraphQL webhooks docs",
+        "HubSpot composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.hubspot.com/docs/api/private-apps",
+        "https://developers.hubspot.com/docs/reference/api",
+        "https://developers.hubspot.com/changelog/remote-hubspot-mcp-server-is-now-generally-available"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0",
+          "Bearer Token"
+        ],
+        "access_model": "Self-serve free",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Very broad",
+        "mcp_status": "Official"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 30,
+        "api_type": 10,
+        "api_breadth": 6,
+        "auth_methods": 5,
+        "mcp_status": 10,
+        "doc_quality": 3
+      },
+      "score": 100,
+      "label": "Easy"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 3
+}

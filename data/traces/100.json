@@ -1,0 +1,65 @@
+{
+  "app": "Grain",
+  "id": 100,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Grain API documentation authentication",
+        "Grain developer API OAuth API key",
+        "Grain API pricing free trial developer access",
+        "Grain official MCP server model context protocol",
+        "Grain REST API GraphQL webhooks docs",
+        "Grain composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.grain.com/",
+        "https://grain.com/release-note/grain-mcp-and-api-updates"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "First-party documented"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 3,
+        "mcp_status": 8,
+        "doc_quality": 3
+      },
+      "score": 76,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.75,
+  "evidence_count": 2
+}

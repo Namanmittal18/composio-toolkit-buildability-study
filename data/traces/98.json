@@ -1,0 +1,63 @@
+{
+  "app": "Mermaid CLI",
+  "id": 98,
+  "research_method": "kiro_web_search",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Mermaid CLI API documentation authentication",
+        "Mermaid CLI developer API OAuth API key",
+        "Mermaid CLI API pricing free trial developer access",
+        "Mermaid CLI official MCP server model context protocol",
+        "Mermaid CLI REST API GraphQL webhooks docs",
+        "Mermaid CLI composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "None"
+        ],
+        "access_model": "No public API",
+        "api_type": [
+          "CLI"
+        ],
+        "api_breadth": "Not applicable",
+        "mcp_status": "None found"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": -40,
+        "api_type": -6,
+        "api_breadth": -5,
+        "auth_methods": -6,
+        "mcp_status": 0,
+        "doc_quality": 0
+      },
+      "score": 0,
+      "label": "Not currently feasible"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "unverified"
+    }
+  ],
+  "confidence": 0.9,
+  "evidence_count": 1
+}

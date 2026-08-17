@@ -1,0 +1,67 @@
+{
+  "app": "Gorgias",
+  "id": 19,
+  "research_method": "canonical_docs+model_knowledge",
+  "stages": [
+    {
+      "stage": "source_discovery",
+      "query_templates": [
+        "Gorgias API documentation authentication",
+        "Gorgias developer API OAuth API key",
+        "Gorgias API pricing free trial developer access",
+        "Gorgias official MCP server model context protocol",
+        "Gorgias REST API GraphQL webhooks docs",
+        "Gorgias composio toolkit"
+      ]
+    },
+    {
+      "stage": "retrieval",
+      "sources": [
+        "https://developers.gorgias.com/",
+        "https://github.com/mattcoatsworth/Gorgias-MCP-Server"
+      ]
+    },
+    {
+      "stage": "extraction",
+      "fields": {
+        "auth_methods": [
+          "Basic Auth",
+          "API Key",
+          "OAuth 2.0"
+        ],
+        "access_model": "Self-serve paid",
+        "api_type": [
+          "REST",
+          "Webhooks"
+        ],
+        "api_breadth": "Moderate",
+        "mcp_status": "Community"
+      }
+    },
+    {
+      "stage": "scoring",
+      "breakdown": {
+        "base": 40,
+        "access_model": 10,
+        "api_type": 10,
+        "api_breadth": 2,
+        "auth_methods": 5,
+        "mcp_status": 3,
+        "doc_quality": 3
+      },
+      "score": 73,
+      "label": "Medium"
+    },
+    {
+      "stage": "validation",
+      "status": "auto-validated",
+      "errors": []
+    },
+    {
+      "stage": "verification",
+      "status": "human-verified"
+    }
+  ],
+  "confidence": 0.7,
+  "evidence_count": 2
+}
